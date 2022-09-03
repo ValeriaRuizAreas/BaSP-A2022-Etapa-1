@@ -1,0 +1,44 @@
+*{
+    color: white;
+}
+
+
+
+
+/*.different-font {
+    color: #373867;
+}*/
+
+
+.container-1 {
+    float: left;
+    width: 25%;
+    height: 3895px;
+    top: 15px;
+    background-color: #262862;
+}
+
+.container-2 {
+    float: right;
+    width: 75%;
+    height: 3895px;
+    top: 20px;
+    background-color: #373867;
+}
+
+
+h1 {
+    font-size: 40px;
+}
+
+
+.main-image {
+    width: 497px;
+    }
+
+.secundary-image {
+    width: 238.58px;
+    border-radius: 60px;
+    border-color: white;
+    border-style: solid;
+}
