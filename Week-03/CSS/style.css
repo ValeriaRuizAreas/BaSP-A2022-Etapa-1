@@ -1,29 +1,119 @@
-*{
+body {
+    background-color: #373867;
+    font-family: 'Roboto', sans-serif;
     color: white;
 }
 
 
+a[href="www.gigatech.com"]{
+    color: white;
+    text-decoration: none;
+}
 
 
-/*.different-font {
-    color: #373867;
-}*/
 
-
-.container-1 {
-    float: left;
-    width: 25%;
+.sidebar {
+    position: absolute;
+    width: 27%;
     height: 3895px;
-    top: 15px;
+    top: 159px;
     background-color: #262862;
 }
 
-.container-2 {
+.search-button {
+    position: absolute;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px;
+    gap: 10px;    
+    width: 300px;
+    height: 60px;
+    left: 44px;
+    top: 64px;
+    background-color: #262862;
+    border: 1px solid #49A37B;
+    font-weight: 400px;
+    font-size: 14px;
+    line-height: 16px;
+    margin-font: 5px;    
+}
+
+.box-side-1 {
+    position: absolute;
+    width: 340px;
+    height: 35px;
+    left: 52px;
+    top: 50px;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center; 
+}
+
+.line-1 {
+    position: absolute;
+    width: 354px;
+    height: 0px;
+    left: 52px;
+    top: 70px;
+    border: 1px solid #49A37B;
+}
+
+.box-side-2 {
+    position: absolute;
+    width: 340px;
+    height: 36px;
+    left: 52px;
+    top: 150px;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.line-2 {
+    position: absolute;
+    width: 354px;
+    height: 0px;
+    left: 52px;
+    top: 170px;
+    border: 1px solid #49A37B;
+}
+
+
+.box-side-3 {
+    position: absolute;
+    width: 340px;
+    height: 35px;
+    left: 52px;
+    top: 250px;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.line-3 {
+    position: absolute;
+    width: 354px;
+    height: 0px;
+    left: 52px;
+    top: 270px;
+    border: 1px solid #49A37B;
+}
+
+
+
+
+
+.container-body {
     float: right;
-    width: 75%;
-    height: 3895px;
-    top: 20px;
-    background-color: #373867;
+    width: 73%;
+    height: 4056px;
+    top: 0px;
 }
 
 
@@ -31,14 +121,27 @@ h1 {
     font-size: 40px;
 }
 
+h2 {
+    font-size: 30px;
+}
+
+
+.subscript {
+    font-size: 12px;
+}
+
+.main-paragraph {
+    font-size: 20px;
+}
+
 
 .main-image {
     width: 497px;
     }
 
+
 .secundary-image {
     width: 238.58px;
-    border-radius: 60px;
-    border-color: white;
-    border-style: solid;
+    border: 2px solid white
+    border-radius: 60px;    
 }
