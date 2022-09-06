@@ -3,25 +3,34 @@ body {
     font-family: 'Roboto', sans-serif;
     color: white;
 }
+.container-body {
+    position: absolute;
+    float: right;
+    width: 73%;
+    height: 4056px;
+    top: 0px;
+}
+.sidebar {
+    position: absolute;
+    float: left;
+    width: 27%;
+    height: 3895px;
+    top: 159px;    
+    background-color: #262862;
+}
+
 a[href="www.gigatech.com"]{
     color: white;
     text-decoration: none;
 }
-.sidebar {
-    position: absolute;
-    width: 27%;
-    height: 3895px;
-    top: 159px;
-    background-color: #262862;
-}
 .search-button {
-    position: relative;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 30px;
+    padding: 25px;
+    margin: 50px;      
     gap: 10px;    
     width: 300px;
     height: 60px;
@@ -31,203 +40,131 @@ a[href="www.gigatech.com"]{
     border: 1px solid #49A37B;
     font-weight: 400px;
     font-size: 14px;
-    line-height: 16px;    
+    line-height: 16px;  
 }
-.box-side-1 {
-    position: relative;
-    width: 340px;
-    height: 35px;
-    left: 52px;
-    top: 50px;
+
+.box-side-1 {  
+    margin: 35px;      
+    height: 0px;    
     font-size: 15px;
-    line-height: 18px;
-    display: flex;
+    line-height: 18px;    
     align-items: center; 
 }
-.line-1 {
-    position: relative;
+.line-1 {    
     width: 290px;
     height: 0px;
-    left: 16px;
-    top: 40px;
     border: 1px solid #49A37B;
 }
-.box-side-2 {
-    position: relative;
-    width: 340px;
-    height: 36px;
-    left: 52px;
-    top: 90px;
+.box-side-2 {  
+    margin: 35px;     
+    height: 0px;    
     font-size: 15px;
-    line-height: 18px;
-    display: flex;
+    line-height: 18px;    
     align-items: center;
 }
 .line-2 {
-    position: relative;
     width: 290px;
-    height: 0px;
-    left: 16px;
-    top: 75px;
+    height: 0px;        
     border: 1px solid #49A37B;
 }
-.box-side-3 {
-    position: relative;
-    width: 340px;
-    height: 35px;
-    left: 52px;
-    top: 130px;
+.box-side-3 {   
+    margin: 35px;     
+    height: 0px;    
     font-size: 15px;
-    line-height: 18px;
-    display: flex;
+    line-height: 18px;    
     align-items: center;
 }
-.line-3 {
-    position: relative;
+.line-3 {    
     width: 290px;
-    height: 0px;
-    left: 16px;
-    top: 118px;
+    height: 0px;   
     border: 1px solid #49A37B;
 }
 .get-in-touch {
-    position: relative;
-    width: 266px;
-    height: 56px;
-    left: 52px;
-    top: 190px;
+    margin: 35px;   
+    height: 0px;   
     font-size: 20px;
     line-height: 23px;
 }
-.line-4 {
-    position: relative;
+.line-4 {    
     width: 290px;
-    height: 0px;
-    left: 16px;
-    top: 150px;
+    height: 0px;    
     border: 2px solid #49A37B;
 }
-.p-sidebar {
-    position: relative;
+.p-sidebar {  
+    margin: 35px;  
     width: 290px;
-    height: 180px;
-    left: 50px;
-    top: 170px;
+    height: 80px;
     font-size: 12px;
     line-height: 14px;
 }
-.addres-sidebar {
-    position: absolute;
-    left: 12%;   
-    top: 13%    
+.contact-information {
+    display: inline-flexbox;
+    margin: 35px;
 }
-.visit-us {
-    position: relative;
-    width: 289px;
-    height: 43px;
-    left: 105px;
-    top: 102px;
-    font-size: 14px;
-    line-height: 16px;
-}
-.line-5 {
-    position: relative;
+.line-5 {    
     width: 290px;
     height: 0px;
     left: 16px;
     top: 95px;
     border: 1px solid #49A37B;
 }
-.email-sidebar {
-    position: absolute;
-    left: 14%;   
-    top: 15%    
-}
-.write-us {
-    position: relative;
-    width: 289px;
-    height: 43px;
-    left: 105px;
-    top: 110px;
-    font-size: 14px;
-    line-height: 16px;
-}
-.line-6 {
-    position: relative;
+.line-6 {    
     width: 290px;
     height: 0px;
     left: 16px;
     top: 100px;
     border: 1px solid #49A37B;
 }
-.phone-sidebar {
-    position: absolute;
-    left: 14%;   
-    top: 17%; 
-}
-.call-us {
-    position: relative;
-    width: 289px;
-    height: 43px;
-    left: 105px;
-    top: 130px;
-    font-size: 14px;
-    line-height: 16px;
-}
-.container-body {
-    float: right;
-    width: 73%;
-    height: 4056px;
-    top: 0px;
+.header {
+    width: 800px;    
+    margin-left: 370px;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
 }
 h1 {
-    position: relative;
-    left: 2%;   
-    top: 25px;       
     font-size: 40px;
     line-height: 47px;
 }
 .subtext-header {
-    position: relative;
-    left: 27%;
-    top: 2px;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
 }
 .line-7 {
-    position: relative;
-    width: 944px;
+    width: 930px;
     height: 0px;
-    left: 8px;
+    margin-left: 380px;
     top: 27px;
     border: 2px solid #49A37B;
 }
 .subtittle-1 {
-    position: relative;   
-    left: 2%;
-    top: 90px;
+    margin-left: 380px;
+    margin-top: 85px;
 }
 .main-subtittle {
     width: 425px;
     height: 42px;
-    font-weight: 700;
+    font-weight: 550;
     font-size: 30px;
     line-height: 35px;
 }
 .main-subtittle-2 {
+    margin-top: 15px;
     width: 246.16px;
     height: 34px;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 20px;
     line-height: 23px;
 }
 .main-paragraph {
+    margin-top: 20px;
     width: 427px;
     height: 355px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 20px;
     line-height: 23px;
     text-align: justify;
@@ -240,7 +177,7 @@ h1 {
     top: 180px;
 }
 a[href="www.gigatech.com/learnmore"]{
-    position: relative;
+    margin-top: 20px;
     display: flex;
     align-items: center;
     padding: 14px 36px;    
@@ -257,53 +194,126 @@ a[href="www.gigatech.com/learnmore"]{
     text-align: center;
 }
 .line-8 {
-    position: relative;
-    width: 944px;
+    width: 930px;
     height: 0px;
-    left: 5px;
-    top: 100px;
+    margin-left: 380px;
+    margin-top: 20px;    
     border: 2px solid #49A37B;
 }
 .secondary-subtitle {
-    position: relative;
     width: 245.74px;
     height: 34px;
-    left: 27px;
-    top: 175px;
+    margin-left: 380px;
+    margin-top: 50px;
     font-style: normal;
     font-weight: 450;
     font-size: 30px;
     line-height: 35px;
 }
 .line-9 {
-    position: absolute;
+    margin-left: 380px;
+    margin-top: 5px;
     width: 148px;
     height: 0px;
-    left: 390px;
-    top: 855px;
     border: 2px solid #49A37B;
 }
+.functions {
+    width: 944px;
+    height: 250px;
+    margin-top: -30px;
+    margin-left: 380px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .track-hours {
-    position: relative;  
-    width: 420px; 
-    height: 120px;
-    left: 30px;
-    top: 260px;
+    width: 400px;
+}
+
+.Reports {
+    width: 400px;
+}
+
+.functions-2 {
+    width: 944px;
+    height: 250px;
+    margin-top: 0px;
+    margin-left: 380px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
+.Management {
+    width: 400px;
+}
 
+.multiple-roles {
+    width: 400px;
+}
 
-.subscript {
+.line-10 {
+    width: 930px;
+    height: 0px;
+    margin-left: 380px;
+    margin-top: 20px;    
+    border: 2px solid #49A37B;
+}
+
+.why-track {
+    margin-left: 380px;
+    margin-top: 60px;
+    font-style: normal;
+    font-weight: 700px;
+    font-size: 30px;
+    line-height: 35px;
+}
+.line-11 {
+    width: 450px;
+    height: 0px;
+    margin-left: 380px;
+    margin-top: 20px;    
+    border: 2px solid #49A37B;
+}
+
+.second-box {
+    width: 944px;
+    height: 250px;
+    background-color: white;
+    margin-left: 380px;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    border-radius: 20px;
+}
+
+.font-h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #373867;    
+}
+
+.different-font {
+    font-style: normal;
+    font-weight: 400;
     font-size: 12px;
+    line-height: 14px;
+    color: #373867;
 }
+
+
 
 
 .secundary-image {
     width: 238.58px;
-    border: 2px solid white
+    border: 2px solid white;
     border-radius: 60px;
 }
+
+
 
 
 
