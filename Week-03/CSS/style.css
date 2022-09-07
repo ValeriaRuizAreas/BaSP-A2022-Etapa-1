@@ -25,8 +25,6 @@ a[href="www.gigatech.com"]{
 }
 .search-button {
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     padding: 25px;
@@ -42,7 +40,6 @@ a[href="www.gigatech.com"]{
     font-size: 14px;
     line-height: 16px;  
 }
-
 .box-side-1 {  
     margin: 35px;      
     height: 0px;    
@@ -115,29 +112,30 @@ a[href="www.gigatech.com"]{
     top: 100px;
     border: 1px solid #49A37B;
 }
-.header {
-    width: 800px;    
-    margin-left: 370px;
-    margin-top: 70px;
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
-}
 h1 {
+    display: inline-block;
+    margin-left: 380px;
+    margin-top: 70px;
     font-size: 40px;
     line-height: 47px;
 }
 .subtext-header {
+    display: inline-block;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 14px;    
+}
+.social-media {    
+    float: right;
+    margin-left: 830px;
+    margin-top: -40px;
 }
 .line-7 {
     width: 930px;
     height: 0px;
     margin-left: 380px;
-    top: 27px;
+    top: 30px;
     border: 2px solid #49A37B;
 }
 .subtittle-1 {
@@ -161,6 +159,7 @@ h1 {
 }
 .main-paragraph {
     margin-top: 20px;
+    margin-bottom: 30px;
     width: 427px;
     height: 355px;
     font-style: normal;
@@ -177,8 +176,6 @@ h1 {
     top: 180px;
 }
 a[href="www.gigatech.com/learnmore"]{
-    margin-top: 20px;
-    display: flex;
     align-items: center;
     padding: 14px 36px;    
     width: 100px;
@@ -197,7 +194,7 @@ a[href="www.gigatech.com/learnmore"]{
     width: 930px;
     height: 0px;
     margin-left: 380px;
-    margin-top: 20px;    
+    margin-top: 40px;    
     border: 2px solid #49A37B;
 }
 .secondary-subtitle {
@@ -217,42 +214,39 @@ a[href="www.gigatech.com/learnmore"]{
     height: 0px;
     border: 2px solid #49A37B;
 }
-.functions {
-    width: 944px;
-    height: 250px;
-    margin-top: -30px;
+.divTable {
+	display: table;
+	width: 95%;
     margin-left: 380px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    margin-top: 30px;
 }
-.track-hours {
-    width: 400px;
+.divTableTrackTime {
+	display: table;
+	width: 100%;
 }
-
-.Reports {
-    width: 400px;
+.divTableRow {
+	display: table-row;
 }
-
-.functions-2 {
-    width: 944px;
-    height: 250px;
-    margin-top: 0px;
-    margin-left: 380px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.divTableHeading {
+	display: table-header-group;
 }
-
-
-.Management {
-    width: 400px;
+.divTableCell, .divTableHead {
+	display: table-cell;
+	padding: 3px 10px;
+    vertical-align:top;
+    padding: 5px;
 }
-
-.multiple-roles {
-    width: 400px;
+.divTableHeading {
+	display: table-header-group;
+	font-weight: bold;
 }
-
+.divTableFoot {
+	display: table-footer-group;
+	font-weight: bold;
+}
+.divTableBody {
+	display: table-row-group;
+}
 .line-10 {
     width: 930px;
     height: 0px;
@@ -260,7 +254,6 @@ a[href="www.gigatech.com/learnmore"]{
     margin-top: 20px;    
     border: 2px solid #49A37B;
 }
-
 .why-track {
     margin-left: 380px;
     margin-top: 60px;
@@ -276,47 +269,159 @@ a[href="www.gigatech.com/learnmore"]{
     margin-top: 20px;    
     border: 2px solid #49A37B;
 }
-
-.second-box {
-    width: 944px;
-    height: 250px;
+.divTableCellWhite, .divTableHead {
+	display: table-cell;
+	padding: 3px 10px;
+    vertical-align:top;
+    padding: 5px;
     background-color: white;
-    margin-left: 380px;
-    display: flex;
-    justify-content: space-around;
-    align-items:center;
-    border-radius: 20px;
+    color: #373867;
 }
-
-.font-h3 {
+.line-12 {
+    width: 930px;
+    height: 0px;
+    margin-left: 380px;
+    margin-top: 40px;    
+    border: 2px solid #49A37B;
+}
+.Contact {
+    margin-left: 380px;
+    margin-top: 60px;
+    font-style: normal;
+    font-weight: 700px;
+    font-size: 30px;
+    line-height: 35px;
+}
+.line-13 {
+    width: 170px;
+    height: 0px;
+    margin-left: 380px;
+    margin-top: 20px;    
+    border: 2px solid #49A37B;
+}
+.About-us {
+    margin-left: 380px;
+    margin-top: 60px;
+    font-style: normal;
+    font-weight: 700px;
+    font-size: 30px;
+    line-height: 35px;
+}
+.line-14 {
+    width: 170px;
+    height: 0px;
+    margin-left: 380px;
+    margin-top: 0px;    
+    border: 2px solid #49A37B;
+} 
+.Lorem {
+    margin-left: 380px;    
+    width: 160.18px;
+    height: 34.2px;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
-    color: #373867;    
 }
-
-.different-font {
+.p-lorem {
+    width: 940px;
+    margin-left: 380px;
+    height: 83.94px;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
-    color: #373867;
 }
-
-
-
-
+.Ament {
+    margin-left: 380px;
+    width: 300px;
+    height: 34.2px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+}
+.p-ament {
+    width: 940px;
+    margin-left: 380px;
+    height: 83.94px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+}
+.Lorem-2 {
+    margin-left: 380px;
+    width: 160px;
+    height: 34.2px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+}
+.float-left {
+    float: left;
+    padding: 10px;
+}
+.float-rigth {
+    float: right;
+    padding: 10px;
+}
 .secundary-image {
     width: 238.58px;
     border: 2px solid white;
     border-radius: 60px;
 }
-
-
-
-
-
-
-
-
+.bottom-of-the-body {
+    margin-left: 440px;
+    width: 800px;
+}
+.p-bottom {    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+}
+.line-15 {
+    width: 930px;
+    height: 0px;
+    margin-left: 380px;
+    margin-top: 40px;    
+    border: 2px solid #49A37B;
+}
+.footer-subtittles {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+}
+.bottom-list {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+}
+.footer-list {
+    display: inline-block;    
+    text-align: left;
+    margin-left: 100px;
+}
+.footer-list-general {
+    display: inline-block;    
+    text-align: left;
+    margin-left: 420px;
+    margin-top: 20px;
+}
+.line-16 {
+    width: 930px;
+    height: 0px;
+    margin-left: 380px;
+    margin-top: 40px;    
+    border: 2px solid #49A37B;
+}
+.footer-social-media {
+    display: inline-block;
+    width: 100%;
+    margin-left: 350px;
+    text-align: center;
+}
