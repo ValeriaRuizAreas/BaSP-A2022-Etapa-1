@@ -1,0 +1,36 @@
+.sidebar {
+    position: fixed;
+    width: 0px;
+    height: 100%;
+    background-color: #262862;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .sidebar {
+        width: 27%;
+        display: block;
+    }
+}
+
+
+.search-button {
+    box-sizing: border-box;
+    justify-content: center;
+   
+    padding: 25px;
+    margin: 50px;      
+    gap: 10px;    
+    width: 60%;
+    height: 5%;
+    left: 44px;
+    top: 64px;
+    background-color: #262862;
+    border: 1px solid #49A37B;
+    border-radius: 5px;
+    font-weight: 400px;
+    font-size: 14px;
+    line-height: 16px;  
+}

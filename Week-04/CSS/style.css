@@ -3,3 +3,9 @@ body {
     font-family: 'Roboto', sans-serif;
     color: white;
 }
+
+a[href="www.gigatech.com"]{
+    color: white;
+    text-decoration: none;
+    background-color: #373867;
+}

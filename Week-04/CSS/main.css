@@ -1,0 +1,83 @@
+.container-main-information {
+    padding: 15px;
+    margin: 25px;
+    border-bottom: #49A37B 4px solid;
+}
+.main-image {
+    max-width: 100%;
+    padding: 0 10px;    
+}
+.main-subtittle {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 35px;
+    margin-top: 20px;
+}
+.main-subtittle-2 {
+    font-size: 20px;
+    line-height: 23px;
+    margin-top: 30px;
+}
+.main-paragraph {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: justify;
+    margin-top: 30px;
+}
+.learn-bottom {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+a[href="www.gigatech.com/learnmore"]{
+    padding: 14px 36px;    
+    width: 100px;
+    height: 20px;
+    background-color: #49A37B;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 350;
+    font-size: 15px;
+    line-height: 18px;
+    color: white;
+    text-decoration: none;
+}
+/* ----------------------------------------------Function----------------------------------------------------------------- */
+.secondary-subtitle {
+    padding: 15px;
+    margin: 25px;
+    font-style: normal;
+    font-size: 30px;    
+}
+.function-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 15px;
+    margin: 25px;
+    border-bottom: #49A37B 4px solid;
+}
+.box {
+    margin-top: 15px;
+}
+.boxes-descriptions {
+    font-style: normal;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.p-boxes {
+    font-style: normal;
+    font-size: 12px;
+}
+/* --------------------------------------Why track time with Trackgenix?----------------------------------------------------- */
+.why-track {
+    padding: 15px;
+    margin: 25px;
+    font-style: normal;
+    font-weight: 700px;
+    font-size: 30px;
+}
+
