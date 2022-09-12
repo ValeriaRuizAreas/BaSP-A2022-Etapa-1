@@ -7,15 +7,12 @@
     color: white;
     display: none;
 }
-
 @media screen and (min-width: 1024px) {
     .sidebar {
         width: 27%;
         display: block;
     }
 }
-
-
 .search-button {
     box-sizing: border-box;
     justify-content: center;

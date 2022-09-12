@@ -1,11 +1,24 @@
-.container-main-information {
-    padding: 15px;
-    margin: 25px;
+.container-body {
+    width: 100%;   
+    float: right;
+    margin-top: 15px;
     border-bottom: #49A37B 4px solid;
+    display: block;
+}
+
+@media screen and (min-width: 1024px) {
+    .container-body {
+        width: 73%;
+    }
+}
+/* --------------------------------------------------------------------container-2------------------------------------------------------------------- */
+.container-2 {
+    display: block;
+    margin: 30px 20px 0 20px;
 }
 .main-image {
     max-width: 100%;
-    padding: 0 10px;    
+    padding: 0 20px;    
 }
 .main-subtittle {
     font-size: 30px;
@@ -43,24 +56,33 @@ a[href="www.gigatech.com/learnmore"]{
     color: white;
     text-decoration: none;
 }
-/* ----------------------------------------------Function----------------------------------------------------------------- */
-.secondary-subtitle {
-    padding: 15px;
-    margin: 25px;
-    font-style: normal;
-    font-size: 30px;    
+@media screen and (min-width: 1024px) {
+    .container-2 {
+        display: flex;
+        justify-content:flex-start;  
+        align-items: flex-start;
+    }
+    .left-cell {
+        order: 1;
+    }
+    .rigth-cell {
+        order: 2;
+        width: 500%;    
+    }
 }
-.function-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-    padding: 15px;
-    margin: 25px;
-    border-bottom: #49A37B 4px solid;
+/* -------------------------------------------------------------Function------------------------------------------------------------------------ */
+.boxes {
+    width: 100%;
+    display: block;
 }
 .box {
-    margin-top: 15px;
+    padding: 5px;
+    margin: 10px;
+}
+.secondary-subtitle {
+    margin: 30px 25px 0 25px;
+    font-style: normal;
+    font-size: 30px;    
 }
 .boxes-descriptions {
     font-style: normal;
@@ -72,12 +94,244 @@ a[href="www.gigatech.com/learnmore"]{
     font-style: normal;
     font-size: 12px;
 }
-/* --------------------------------------Why track time with Trackgenix?----------------------------------------------------- */
+@media screen and (min-width: 768px) {
+    .box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;  
+        align-items:flex-start; 
+    }
+    .box-img {
+        flex: 0;
+        padding-right: 10px;
+
+    }
+    .box-txt {
+        flex: 1;
+    }    
+}
+@media screen and (min-width: 1024px) {
+    .boxes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;  
+        align-items:flex-start; 
+    }
+    .box {
+        flex: 2;
+        flex-basis: 40%;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;  
+        align-items:flex-start; 
+    }
+    .box-img {
+        flex: 0;
+        padding-right: 10px;
+
+    }
+    .box-txt {
+        flex: 1;
+    }  
+}
+/* ------------------------------------------------------Why track time with Trackgenix?-------------------------------------------------------- */
+.container {
+    width: 100%;   
+    display: block;
+}
 .why-track {
     padding: 15px;
     margin: 25px;
     font-style: normal;
     font-weight: 700px;
     font-size: 30px;
+    background-color: white;
+    color: #373867;
+    border-radius: 15px;
+}
+@media screen and (min-width: 768px) {
+    .container { 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .why-track {
+    flex: 2;
+    flex-basis: 40%;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .why-track {
+    flex: 1;
+    flex-basis: 10%;
+    }
+}
+/* --------------------------------------------------------CONTACT US-------------------------------------------------------------- */
+.container-contact-us {
+    margin: 15px;
+}
+.Contact {
+    font-style: normal;
+    font-weight: 700px;
+    font-size: 30px;
+    line-height: 35px;
+}
+.input {
+    width: 85%;
+    padding: 5px 10px 5px 10px;
+    margin: 5px 10px 5px 10px;
 }
 
+.text-area {
+    width: 85%;
+    padding: 5px 10px 5px 10px;
+    margin: 5px 10px 5px 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .input {
+        width: 95%;
+        padding: 5px 10px 5px 10px;
+        margin: 5px 10px 5px 10px;
+    }
+    .text-area {
+        width: 95%;
+        padding: 5px 10px 5px 10px;
+        margin: 5px 10px 5px 10px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .input-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .flex-input {
+        flex: 1;
+        padding-right: 20px;
+    }
+}
+/* --------------------------------------------------------------ABOUT US------------------------------------------------------------------------- */
+.clean-float {
+    clear: both;
+} 
+.Lorem {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+}
+.p-lorem {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+}
+.Ament {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+}
+.p-ament {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+}
+.Lorem-2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+}
+.float-left {
+    float: right;
+    padding: 10px;
+}
+.float-rigth {
+    float: right;
+    padding: 10px;
+    display: none;
+}
+.secundary-image {
+    width: 238.58px;
+    border: 2px solid white;
+    border-radius: 60px;
+}
+.txt-2 {
+    display: none;
+}
+.txt-3 {
+    display: none;
+}
+.txt-4 {
+    display: none;
+}
+.txt-5 {
+    display: none;
+}
+@media screen and (min-width: 768px) {
+    .float-left {
+        float: left;        
+    }
+    .float-rigth {
+        display: inline;       
+    }
+    .txt-1 {
+        display: none;
+    }
+    .txt-3 {
+        display: inline;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .float-left {
+        float: left;
+    }
+    .float-rigth {
+        display: inline;
+    }
+    .txt-1 {
+        display: inline;
+    }
+    .txt-2 {
+        display: inline;
+    }
+    .txt-3 {
+        display: inline;
+    }
+    .txt-4 {
+        display: inline;
+    }
+    .txt-5 {
+        display: inline;
+    }
+}
+
+
+/* -------------------LISTS------------------ */
+.list-container {
+    display: block;
+    width: 100%;
+}
+.footer-list {
+    padding: 15px;
+}
+@media screen and (min-width: 768px) {
+    .list-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        }
+}

@@ -19,7 +19,8 @@
         <link rel="stylesheet" href="CSS/style.css"> 
     </head>
     <body>
-        <!-- <aside class="sidebar">
+        <!------------------------------------------SIDEBAR---------------------------------------------------------->
+        <nav class="sidebar">
             <input class="search-button" type="text" placeholder="Search" />
             <section>                    
                 <ul>
@@ -50,26 +51,33 @@
                     <img class="phone-sidebar" src="img/icon-telephone.png" alt="Telephone image" /> 958585412225
                 </address>
             </section>
-        </aside> -->
+        </nav>
+        <!----------------------------------------------BODY---------------------------------------------------------->
         <main class="container-body">
-            <div class="header">
-                <div class="menu-bottom">
+            <!------------------------------------------HEADER---------------------------------------------------------->
+            <header class="header">
+                <div class="menu-button">
                     <img src="img/menu-bottom.png" alt="">
                 </div>
                 <div class="container-header">
-                    <h1 class="tittle">
-                        Trackgenix
-                    </h1>
-                    <h2 class="subtittle">
-                        by GigaTech Software Solutions SA
-                    </h2>
-                </div>                
-            </div>           
-            <div class="container-main-information">
-                <div>
+                    <div class="container-text">
+                        <h1 class="tittle">
+                            Trackgenix
+                        </h1>
+                    </div>                    
+                    <div>    
+                        <h2 class="subtittle">
+                            by GigaTech Software Solutions SA
+                        </h2>
+                    </div>
+                </div>
+            </header>           
+            <!------------------------------------------SECTION 1---------------------------------------------------------->
+            <section class="container-2">
+                <div class="rigth-cell">
                     <img class="main-image" src="img/main-image.png" alt="Main image" />
                 </div>
-                <section class="subtittle-1">
+                <div class="left-cell"> 
                     <h2 class="main-subtittle">
                         Time tracker for teams
                     </h2>
@@ -91,155 +99,187 @@
                     </p>
                     <div class="learn-bottom">
                         <a href="www.gigatech.com/learnmore">LEARN MORE</a>
-                    </div>           
-                </section>
-            </div>
-            <div>
+                    </div>
+                </div>           
+            </section>
+            <!------------------------------------------SECTION 2 FUNCTIONS---------------------------------------------------------->
+            <section>
                 <h2 class="secondary-subtitle">
                     Functions
                 </h2>
-                <section class="function-container">
+                <div class="boxes">
                     <div class="box">
-                        <img src="img/icon-time.png" alt="Time image" />
-                        <h3 class="boxes-descriptions">
-                            Track work hours
-                        </h3>
-                        <p class="p-boxes">
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et
-                            massa mi. Aliquam in hendrerit urna. Pellentesque sit amet
-                            sapien fringilla, mattis ligula consectetur, ultrices mauris.
-                            Maecenas vitae mattis tellus..
-                        </p>
+                        <div class="box-img">
+                            <img src="img/icon-time.png" alt="Time image" />
+                        </div>
+                        <div class="box-txt">
+                            <h3 class="boxes-descriptions">
+                                Track work hours
+                            </h3>
+                            <p class="p-boxes">
+                                Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et
+                                massa mi. Aliquam in hendrerit urna. Pellentesque sit amet
+                                sapien fringilla, mattis ligula consectetur, ultrices mauris.
+                                Maecenas vitae mattis tellus..
+                            </p>
+                        </div>
                     </div>
                     <div class="box">
-                        <img src="img/icon-reports.png" alt="Reports image" />
-                        <h3 class="boxes-descriptions">
-                            Reports
-                        </h3>
-                        <p class="p-boxes">
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et
-                            massa mi. Aliquam in hendrerit urna. Pellentesque sit amet
-                            sapien fringilla, mattis ligula consectetur, ultrices mauris.
-                            Maecenas vitae mattis tellus..
-                        </p>
+                        <div class="box-img">
+                            <img src="img/icon-reports.png" alt="Reports image" />
+                        </div>
+                        <div class="box-txt">
+                            <h3 class="boxes-descriptions">
+                                Reports
+                            </h3>
+                            <p class="p-boxes">
+                                Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et
+                                massa mi. Aliquam in hendrerit urna. Pellentesque sit amet
+                                sapien fringilla, mattis ligula consectetur, ultrices mauris.
+                                Maecenas vitae mattis tellus..
+                            </p>
+                        </div>
                     </div>
                     <div class="box">
-                        <img src="img/icon-resources.png" alt="Gears image" />
-                        <h3 class="boxes-descriptions">
-                            Management
-                        </h3>
-                        <p class="p-boxes">
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et
-                            massa mi. Aliquam in hendrerit urna. Pellentesque sit amet
-                            sapien fringilla, mattis ligula consectetur, ultrices mauris.
-                            Maecenas vitae mattis tellus..
-                        </p>
+                        <div class="box-img">
+                            <img src="img/icon-resources.png" alt="Gears image" />
+                        </div>
+                        <div class="box-txt">    
+                            <h3 class="boxes-descriptions">
+                                Management
+                            </h3>
+                            <p class="p-boxes">
+                                Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et
+                                massa mi. Aliquam in hendrerit urna. Pellentesque sit amet
+                                sapien fringilla, mattis ligula consectetur, ultrices mauris.
+                                Maecenas vitae mattis tellus..
+                            </p>
+                        </div>
                     </div>
                     <div class="box">
-                        <img src="img/icon-roles.png" alt="Roles image" />
-                        <h3 class="boxes-descriptions">
-                            Multiple roles
-                        </h3>
-                        <p class="p-boxes">
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et
-                            massa mi. Aliquam in hendrerit urna. Pellentesque sit amet
-                            sapien fringilla, mattis ligula consectetur, ultrices mauris.
-                            Maecenas vitae mattis tellus..
-                        </p>
+                        <div class="box-img">
+                            <img src="img/icon-roles.png" alt="Roles image" />
+                        </div>
+                        <div class="box-txt">
+                            <h3 class="boxes-descriptions">
+                                Multiple roles
+                            </h3>
+                            <p class="p-boxes">
+                                Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et
+                                massa mi. Aliquam in hendrerit urna. Pellentesque sit amet
+                                sapien fringilla, mattis ligula consectetur, ultrices mauris.
+                                Maecenas vitae mattis tellus..
+                            </p>
+                        </div>
                     </div>
-                </section>
-            </div>                     
+                </div>
+            </section>                     
+            <!------------------------------------------SECTION 3 WHY TRACKTIME---------------------------------------------------------->
             <section> 
-                <h2 class="why-track">
+                <h2 class="secondary-subtitle">
                     Why track time with Trackgenix?
                 </h2>
-                <div>
-                    <h3 class="boxes-descriptions">
-                        Boost Productivity
-                    </h3>
-                    <p class="p-boxes">
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et
-                        massa mi. Aliquam in hendrerit urna. Pellentesque sit amet
-                        sapien fringilla, mattis ligula consectetur, ultrices mauris.
-                        Maecenas vitae mattis tellus..
-                    </p>
-                    <img src="img/icon-boost.png" alt="Boost image" />
+                <div class="container">
+                    <div class="why-track">
+                        <h3 class="boxes-descriptions">
+                            Boost Productivity
+                        </h3>
+                        <p class="p-boxes">
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et
+                            massa mi. Aliquam in hendrerit urna. Pellentesque sit amet
+                            sapien fringilla, mattis ligula consectetur, ultrices mauris.
+                            Maecenas vitae mattis tellus..
+                        </p>
+                        <img src="img/icon-boost.png" alt="Boost image" />
+                    </div>
+                    <div class="why-track">
+                        <h3 class="boxes-descriptions">
+                            Manage team
+                        </h3>
+                        <p class="p-boxes">
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et
+                            massa mi. Aliquam in hendrerit urna. Pellentesque sit amet
+                            sapien fringilla, mattis ligula consectetur, ultrices mauris.
+                            Maecenas vitae mattis tellus..
+                        </p>
+                        <img src="img/icon-multiple-roles.png" alt="Roles image" />
+                    </div>
+                    <div class="why-track">
+                        <h3 class="boxes-descriptions">
+                            Business intelligence
+                        </h3>
+                        <p class="p-boxes">
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et
+                            massa mi. Aliquam in hendrerit urna. Pellentesque sit amet
+                            sapien fringilla, mattis ligula consectetur, ultrices mauris.
+                            Maecenas vitae mattis tellus..
+                        </p>
+                        <img src="img/icon-business-intelligence.png" alt="Business image" />
+                    </div>
+                    <div class="why-track">
+                        <h3 class="boxes-descriptions">
+                            Decision-making
+                        </h3>
+                        <p class="p-boxes">
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et
+                            massa mi. Aliquam in hendrerit urna. Pellentesque sit amet
+                            sapien fringilla, mattis ligula consectetur, ultrices mauris.
+                            Maecenas vitae mattis tellus..
+                        </p>
+                        <img src="img/icon-decision-making.png" alt="Files image" />
+                    </div>
                 </div>
-                <div>
-                    <h3 class="boxes-descriptions">
-                        Manage team
-                    </h3>
-                    <p class="p-boxes">
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et
-                        massa mi. Aliquam in hendrerit urna. Pellentesque sit amet
-                        sapien fringilla, mattis ligula consectetur, ultrices mauris.
-                        Maecenas vitae mattis tellus..
-                    </p>
-                    <img src="img/icon-multiple-roles.png" alt="Roles image" />
-                </div>
-                <div>
-                    <h3 class="boxes-descriptions">
-                        Business intelligence
-                    </h3>
-                    <p class="p-boxes">
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et
-                        massa mi. Aliquam in hendrerit urna. Pellentesque sit amet
-                        sapien fringilla, mattis ligula consectetur, ultrices mauris.
-                        Maecenas vitae mattis tellus..
-                    </p>
-                    <img src="img/icon-business-intelligence.png" alt="Business image" />
-                </div>
-                <div>
-                    <h3 class="boxes-descriptions">
-                        Decision-making
-                    </h3>
-                    <p class="p-boxes">
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et
-                        massa mi. Aliquam in hendrerit urna. Pellentesque sit amet
-                        sapien fringilla, mattis ligula consectetur, ultrices mauris.
-                        Maecenas vitae mattis tellus..
-                    </p>
-                    <img src="img/icon-decision-making.png" alt="Files image" />
-                </div>
-            </section>                 
-                <!-- <section>
-                    <h2 class="Contact">
-                        Contact us
-                    </h2>
-                    <form>
-                        <input type="text" placeholder="Name" />
-                        <input type="text" placeholder="Email" />
-                        <select name="Area">
-                            <option value="Area">Area</option>
-                            <option value="Employee">Employee</option>
-                            <option value="Employee PM">Employee PM</option>
-                            <option value="Admin">Admin</option>
-                            <option value="Super Admin">Super Admin</option>
-                        </select>
-                        <h4>
-                            Message
-                        </h4>
-                        <textarea name="message"></textarea>
-                        <button type="button">Submit</button>
-                        <button type="button">Reset</button>
-                    </form>
-                </section>
-                <section>
-                    <h2 class="About-us">
-                        About us
-                    </h2>
-                    <h3 class="Lorem">
-                        Lorem
-                    </h3>
-                    <p class="p-lorem">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
-                        massa mi. Aliquam in hendrerit urna. Pellentesque sit amet
-                        sapien fringilla, mattis ligula consectetur, ultrices mauris.
-                        Maecenas vitae mattis tellus. Nullam quis imperdiet augue.
-                        Vestibulum auctor ornare leo, non suscipit .Lorem ipsum dolor
-                        sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam
-                        in hendrerit urna. Pellentesque sit amet .
-                    </p>
+            </section>                  
+            <!------------------------------------------SECTION 4 CONTACT US---------------------------------------------------------------->
+            <section class="container-contact-us">
+                <h2 class="Contact">
+                    Contact us
+                </h2>
+                <form>
+                    <div class="input-container">
+                        <div class="flex-input">
+                            <input class="input" type="text" placeholder="Name" />
+                        </div>
+                        <div class="flex-input">
+                            <input class="input" type="text" placeholder="Email" />
+                        </div>
+                    </div>
+                    <select class="input" name="Area">
+                        <option value="Area">Area</option>
+                        <option value="Employee">Employee</option>
+                        <option value="Employee PM">Employee PM</option>
+                        <option value="Admin">Admin</option>
+                        <option value="Super Admin">Super Admin</option>
+                    </select>
+                    <h4>
+                        Message
+                    </h4>
+                    <textarea class="text-area" name="message" rows="6"></textarea>
+                    <button class="btn-submit" type="button">Submit</button>
+                    <button class="btn-reset" type="button">Reset</button>
+                </form>
+            </section>
+            <!------------------------------------------SECTION 5 ABOUT US---------------------------------------------------------------->
+            <section>
+                <h2 class="About-us">
+                    About us
+                </h2>
+                <h3 class="Lorem">
+                    Lorem
+                </h3>
+                <aside class="float-left">
+                    <img class="secundary-image" src="img/secundary-image.png" alt="Secundary image" />
+                </aside>
+                <p class="p-lorem">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
+                    massa mi. Aliquam in hendrerit urna. Pellentesque sit amet
+                    sapien fringilla, mattis ligula consectetur, ultrices mauris.
+                    Maecenas vitae mattis tellus. Nullam quis imperdiet augue.
+                    Vestibulum auctor ornare leo, non suscipit .Lorem ipsum dolor
+                    sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam
+                    in hendrerit urna. Pellentesque sit amet .
+                </p>
+                <div class="txt-1">
                     <h3 class="Ament">
                         Amet Aungue
                     </h3>
@@ -252,111 +292,116 @@
                         sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam
                         in hendrerit urna. Pellentesque sit amet .
                     </p>
+                </div>
+                <div class="txt-2">
                     <h3 class="Lorem-2">
                         Lorem
                     </h3>
-                    <div class="bottom-of-the-body">
-                        <aside class="float-left">
-                            <img class="secundary-image" src="img/secundary-image.png" alt="Secundary image" />
-                        </aside>
-                        <p class="p-bottom">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
-                            massa mi. Aliquam in hendrerit urna. Pellentesque sit amet
-                            sapien fringilla, mattis ligula consectetur, ultrices mauris.
-                            Maecenas vitae mattis tellus. Nullam quis imperdiet augue.
-                            Vestibulum auctor ornare leo, non suscipit .Lorem ipsum dolor
-                            sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam
-                            in hendrerit urna. Pellentesque sit amet sapien fringilla,
-                            mattis ligula consectetur, ultrices mauris. Maecenas vitae
-                            mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor
-                            ornare leo, non suscipit . Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit. Ut et massa mi. Aliquam in
-                            hendrerit urna. Pellentesque sit amet sapien fringilla, mattis
-                            ligula consectetur, ultrices mauris. Maecenas vitae mattis
-                            tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare
-                            leo, non suscipit .Lorem ipsum dolor sit amet, consectetur
-                            adipiscing e
-                        </p>
-                        &nbsp;
-                        <p class="p-bottom">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
-                            massa mi. Aliquam in hendrerit urna. Pellentesque sit amet
-                            sapien fringilla, mattis ligula consectetur, ultrices mauris.
-                            Maecenas vitae mattis tellus. Nullam quis imperdiet augue.
-                            Vestibulum auctor ornare leo, non suscipit .Lorem ipsum dolor
-                            sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam
-                            in hendrerit urna. Pellentesque sit amet sapien fringilla,
-                            mattis ligula consectetur, ultrices mauris. Maecenas vitae
-                            mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor
-                            ornare leo, non suscipit . Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit. Ut et massa mi. Aliquam in
-                            hendrerit urna. Pellentesque sit amet sapien fringilla, mattis
-                            ligula consectetur, ultrices mauris. Maecenas vitae mattis
-                            tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare
-                            leo, non suscipit .Lorem ipsum dolor sit amet, consectetur
-                            adipiscing e
-                        </p>
-                        &nbsp;
-                        <aside class="float-rigth">
-                            <img src="img/secundary-image.png" class="secundary-image" alt="Secundary image" />
-                        </aside>
-                        <p class="p-bottom">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
-                            massa mi. Aliquam in hendrerit urna. Pellentesque sit amet
-                            sapien fringilla, mattis ligula consectetur, ultrices mauris.
-                            Maecenas vitae mattis tellus. Nullam quis imperdiet augue.
-                            Vestibulum auctor ornare leo, non suscipit .Lorem ipsum dolor
-                            sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam
-                            in hendrerit urna. Pellentesque sit amet sapien fringilla,
-                            mattis ligula consectetur, ultrices mauris. Maecenas vitae
-                            mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor
-                            ornare leo, non suscipit . Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit. Ut et massa mi. Aliquam in
-                            hendrerit urna. Pellentesque sit amet sapien fringilla, mattis
-                            ligula consectetur, ultrices mauris. Maecenas vitae mattis
-                            tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare
-                            leo, non suscipit .Lorem ipsum dolor sit amet, consectetur
-                            adipiscing e
-                        </p>
-                    </div>                    
-                </section>
-                <section>
-                    <div class="footer-list">
-                        <h3 class="footer-subtittles">
-                            Product
-                        </h3>
-                        <ol class="bottom-list">
-                            <li>Functionalities</li>
-                            <li>Integrations</li>
-                            <li>Downloand</li>
-                            <li>Extra</li>
-                        </ol>
-                    </div>
-                    <div class="footer-list">                    
-                        <h3 class="footer-subtittles">
-                            Company
-                        </h3>
-                        <ol class="bottom-list">
-                            <li>About us</li>
-                            <li>Customers</li>
-                            <li>Resources</li>
-                            <li>Blog</li>
-                        </ol>
-                    </div>
-                    <div class="footer-list">
-                        <h3 class="footer-subtittles">
-                            Support
-                        </h3>
-                        <ol class="bottom-list">
-                            <li>Help</li>
-                            <li>Tutorials</li>
-                            <li>Api</li>
-                            <li>Contact</li>
-                        </ol>
-                    </div>   
-                </section>
-            </div>
+                </div>                
+                
+                <div class="txt-3">
+                    <p class="p-bottom">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
+                        massa mi. Aliquam in hendrerit urna. Pellentesque sit amet
+                        sapien fringilla, mattis ligula consectetur, ultrices mauris.
+                        Maecenas vitae mattis tellus. Nullam quis imperdiet augue.
+                        Vestibulum auctor ornare leo, non suscipit .Lorem ipsum dolor
+                        sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam
+                        in hendrerit urna. Pellentesque sit amet sapien fringilla,
+                        mattis ligula consectetur, ultrices mauris. Maecenas vitae
+                        mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor
+                        ornare leo, non suscipit . Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Ut et massa mi. Aliquam in
+                        hendrerit urna. Pellentesque sit amet sapien fringilla, mattis
+                        ligula consectetur, ultrices mauris. Maecenas vitae mattis
+                        tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare
+                        leo, non suscipit .Lorem ipsum dolor sit amet, consectetur
+                        adipiscing e
+                    </p>
+                </div>
+                <div class="txt-4">                   
+                    <p class="p-bottom">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
+                        massa mi. Aliquam in hendrerit urna. Pellentesque sit amet
+                        sapien fringilla, mattis ligula consectetur, ultrices mauris.
+                        Maecenas vitae mattis tellus. Nullam quis imperdiet augue.
+                        Vestibulum auctor ornare leo, non suscipit .Lorem ipsum dolor
+                        sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam
+                        in hendrerit urna. Pellentesque sit amet sapien fringilla,
+                        mattis ligula consectetur, ultrices mauris. Maecenas vitae
+                        mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor
+                        ornare leo, non suscipit . Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Ut et massa mi. Aliquam in
+                        hendrerit urna. Pellentesque sit amet sapien fringilla, mattis
+                        ligula consectetur, ultrices mauris. Maecenas vitae mattis
+                        tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare
+                        leo, non suscipit .Lorem ipsum dolor sit amet, consectetur
+                        adipiscing e
+                    </p>
+                </div>
+                <aside class="float-rigth">
+                    <img src="img/secundary-image.png" class="secundary-image" alt="Secundary image" />
+                </aside>
+                <div class="txt-5">
+                    <p class="p-bottom">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
+                        massa mi. Aliquam in hendrerit urna. Pellentesque sit amet
+                        sapien fringilla, mattis ligula consectetur, ultrices mauris.
+                        Maecenas vitae mattis tellus. Nullam quis imperdiet augue.
+                        Vestibulum auctor ornare leo, non suscipit .Lorem ipsum dolor
+                        sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam
+                        in hendrerit urna. Pellentesque sit amet sapien fringilla,
+                        mattis ligula consectetur, ultrices mauris. Maecenas vitae
+                        mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor
+                        ornare leo, non suscipit . Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Ut et massa mi. Aliquam in
+                        hendrerit urna. Pellentesque sit amet sapien fringilla, mattis
+                        ligula consectetur, ultrices mauris. Maecenas vitae mattis
+                        tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare
+                        leo, non suscipit .Lorem ipsum dolor sit amet, consectetur
+                        adipiscing e
+                    </p>
+                </div>                                  
+            </section>
+            <!------------------------------------------SECTION 6 LISTS---------------------------------------------------------------->            
+            <div class="clean-float"></div>
+            <section class="list-container">
+                <div class="footer-list">
+                    <h3 class="footer-subtittles">
+                        Product
+                    </h3>
+                    <ol class="bottom-list">
+                        <li>Functionalities</li>
+                        <li>Integrations</li>
+                        <li>Downloand</li>
+                        <li>Extra</li>
+                    </ol>
+                </div>
+                <div class="footer-list">                    
+                    <h3 class="footer-subtittles">
+                        Company
+                    </h3>
+                    <ol class="bottom-list">
+                        <li>About us</li>
+                        <li>Customers</li>
+                        <li>Resources</li>
+                        <li>Blog</li>
+                    </ol>
+                </div>
+                <div class="footer-list">
+                    <h3 class="footer-subtittles">
+                        Support
+                    </h3>
+                    <ol class="bottom-list">
+                        <li>Help</li>
+                        <li>Tutorials</li>
+                        <li>Api</li>
+                        <li>Contact</li>
+                    </ol>
+                </div>   
+            </section>
         </main>
+        <!-----------------------------------------------FOOTER---------------------------------------------------------->
         <footer class="footer">
             <div class="footer-social-media">
                 <a href="https://www.facebook.com">
@@ -386,4 +431,4 @@
             </h4>
         </footer>          
     </body>      
-</html> -->
+</html>
