@@ -2,10 +2,8 @@
     width: 100%;   
     float: right;
     margin-top: 15px;
-    border-bottom: #49A37B 4px solid;
     display: block;
 }
-
 @media screen and (min-width: 1024px) {
     .container-body {
         width: 73%;
@@ -224,11 +222,22 @@ a[href="www.gigatech.com/learnmore"]{
 .clean-float {
     clear: both;
 } 
-.Lorem {
+.about {
+    margin: 30px 15px;
+}
+.about-us {
+    font-style: normal;
+    font-weight: 700px;
+    font-size: 30px;
+    line-height: 35px;
+}
+.lorem {
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
+    padding: 5px;
+    margin: 5px;
 }
 .p-lorem {
     font-style: normal;
@@ -236,27 +245,41 @@ a[href="www.gigatech.com/learnmore"]{
     font-size: 12px;
     line-height: 14px;
 }
-.Ament {
+.ament {
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
+    padding: 5px;
+    margin: 5px;
 }
 .p-ament {
     font-style: italic;
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
+    margin: 10px 10px 0 50px;
 }
-.Lorem-2 {
+.p-button {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: justify;
+}
+.lorem-2 {
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
 }
-.float-left {
+.mobile-version {
     float: right;
     padding: 10px;
+}
+.float-left {
+    float: left;
+    padding: 10px;
+    display: none;
 }
 .float-rigth {
     float: right;
@@ -281,48 +304,64 @@ a[href="www.gigatech.com/learnmore"]{
     display: none;
 }
 @media screen and (min-width: 768px) {
-    .float-left {
-        float: left;        
+    .mobile-version {
+        display: none;
     }
-    .float-rigth {
-        display: inline;       
+    .p-lorem {
+        display: none;
     }
     .txt-1 {
         display: none;
     }
+    .float-left {
+        display: inline;
+        margin: 15px;        
+    }
     .txt-3 {
         display: inline;
-    }
-}
-@media screen and (min-width: 1024px) {
-    .float-left {
-        float: left;
+        padding: 5px;
+        margin: 5px;
     }
     .float-rigth {
         display: inline;
+        margin: 15px;       
+    }
+    .txt-5 {
+        display: inline;
+        margin: 5px;
+        padding: 5px;
+    }
+}
+@media screen and (min-width: 1024px) {
+   .p-lorem {
+        display: inline;
+        margin-bottom: 5px;
+    }
+    .p-ament {
+        margin: 5px;
     }
     .txt-1 {
         display: inline;
+        margin: 10px;
     }
     .txt-2 {
-        display: inline;
-    }
-    .txt-3 {
         display: inline;
     }
     .txt-4 {
         display: inline;
     }
-    .txt-5 {
-        display: inline;
-    }
 }
-
-
 /* -------------------LISTS------------------ */
 .list-container {
     display: block;
+    margin: 15px;
     width: 100%;
+}
+.footer-subtittles {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
 }
 .footer-list {
     padding: 15px;
@@ -335,3 +374,4 @@ a[href="www.gigatech.com/learnmore"]{
         justify-content: space-evenly;
         }
 }
+
