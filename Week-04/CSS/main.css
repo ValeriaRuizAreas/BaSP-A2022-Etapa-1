@@ -50,10 +50,10 @@ a[href="www.gigatech.com/learnmore"]{
     font-style: normal;
     font-weight: 350;
     font-size: 15px;
-    line-height: 18px;
     color: white;
     text-decoration: none;
 }
+
 @media screen and (min-width: 1024px) {
     .container-2 {
         display: flex;
@@ -65,7 +65,10 @@ a[href="www.gigatech.com/learnmore"]{
     }
     .rigth-cell {
         order: 2;
-        width: 500%;    
+        width: 500%;
+    }
+    .main-image{
+        padding-top: 40px;
     }
 }
 /* -------------------------------------------------------------Function------------------------------------------------------------------------ */
@@ -120,7 +123,6 @@ a[href="www.gigatech.com/learnmore"]{
     .box {
         flex: 2;
         flex-basis: 40%;
-
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -130,7 +132,6 @@ a[href="www.gigatech.com/learnmore"]{
     .box-img {
         flex: 0;
         padding-right: 10px;
-
     }
     .box-txt {
         flex: 1;
@@ -173,7 +174,10 @@ a[href="www.gigatech.com/learnmore"]{
     flex-basis: 10%;
     }
 }
-/* --------------------------------------------------------CONTACT US-------------------------------------------------------------- */
+.img-track{
+    float: inline-end;
+}
+/* ----------------------------------------------------------------CONTACT US--------------------------------------------------------------------- */
 .container-contact-us {
     margin: 15px;
 }
@@ -188,13 +192,31 @@ a[href="www.gigatech.com/learnmore"]{
     padding: 5px 10px 5px 10px;
     margin: 5px 10px 5px 10px;
 }
-
 .text-area {
     width: 85%;
     padding: 5px 10px 5px 10px;
     margin: 5px 10px 5px 10px;
 }
-
+.btn-submit {
+    padding: 5px 30px;    
+    width: 100px;
+    background-color: #49A37B;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 350;
+    font-size: 15px;
+    color: white;
+}
+.btn-reset {
+    padding: 5px 30px;    
+    width: 100px;
+    background-color: #f13312;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 350;
+    font-size: 15px;
+    color: white;
+}
 @media screen and (min-width: 768px) {
     .input {
         width: 95%;
@@ -351,7 +373,7 @@ a[href="www.gigatech.com/learnmore"]{
         display: inline;
     }
 }
-/* -------------------LISTS------------------ */
+/* --------------------------------------------------------LISTS-------------------------------------------------- */
 .list-container {
     display: block;
     margin: 15px;

@@ -28,7 +28,8 @@ a[href="www.gigatech.com"]{
     justify-content: center;
     align-items: flex-start;
     padding: 25px;
-    margin: 50px;      
+    margin: 50px;
+    padding: pink;      
     gap: 10px;    
     width: 300px;
     height: 60px;

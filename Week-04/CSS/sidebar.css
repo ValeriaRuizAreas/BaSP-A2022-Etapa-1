@@ -1,5 +1,6 @@
 .sidebar {
-    position: fixed;
+    position:fixed;
+    overflow-y: scroll;
     width: 0px;
     height: 100%;
     background-color: #262862;
@@ -14,20 +15,54 @@
     }
 }
 .search-button {
-    box-sizing: border-box;
-    justify-content: center;
-   
-    padding: 25px;
-    margin: 50px;      
-    gap: 10px;    
-    width: 60%;
-    height: 5%;
-    left: 44px;
-    top: 64px;
+    padding: 20px;
+    margin: 40px;
+    height: 5px;
+    color: white;
     background-color: #262862;
-    border: 1px solid #49A37B;
+    border: 2px solid #49A37B;
     border-radius: 5px;
-    font-weight: 400px;
     font-size: 14px;
     line-height: 16px;  
+}
+.search-container {
+    background-color: #373867;
+    width: 100%;
+    height: 120px;
+}
+.first-section {
+    padding-top: 20px 0 0 5px;
+    display: block;
+}
+.box-side {
+    margin: 15px;
+    padding: 20px 0;
+    border-bottom: 1px solid #49A37B;
+    width: 90%;
+}
+.get-in-touch {
+    margin: 15px;
+    padding: 40px 0 5px 0;
+    border-bottom: 1px solid #49A37B;
+    width: 90%;
+    font-size: 20px;
+}
+.p-sidebar {
+    margin: 15px;
+    padding-bottom: 5px;
+    font-size: 12px;
+}
+.contact-information {
+    margin-top: 5px;
+}
+.img-sidebar {
+    padding-right: 10px;
+}
+.address {
+    margin: 15px;
+    display:flex;
+    align-items: flex-end;
+    padding: 20px 0 25px 0;
+    border-bottom: 1px solid #49A37B; 
+    width: 90%;
 }
