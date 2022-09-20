@@ -1,4 +1,5 @@
 console.log('Exercise 05: For');
+
 // a. Create an array of 5 words
 var lemonCurd = ['eggs', 'cornstarch', 'milk', 'lemon', 'butter'];
 for (var i = 0; i < lemonCurd.length; i++) {

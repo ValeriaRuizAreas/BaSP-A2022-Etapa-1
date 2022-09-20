@@ -1,4 +1,5 @@
 console.log('Exercise 04: If Else');
+
 // a. Create a random number
 var myNumber = Math.random();
 console.log('the created number is', myNumber);
@@ -7,6 +8,7 @@ if (myNumber >= 0.5) {
   } else {
     alert('Lower than 0.5');
   }
+
 // b. Create an Age variable
 var age = Math.round(Math.random() * 100);
 console.log('The age of my person is', age);

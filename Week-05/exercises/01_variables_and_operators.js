@@ -1,4 +1,5 @@
 console.log('Exercise 01: Variables and Operators');
+
 // a. Create two numeric variables
 var dogFoodCost, catFoodCost, totalCost;
 dogFoodCost = 4000;

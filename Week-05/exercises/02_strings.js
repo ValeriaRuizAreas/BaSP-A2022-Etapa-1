@@ -1,4 +1,5 @@
 console.log('Exercise 02: Strings');
+
 // a. Create a string variable 
 var city = 'Montevideo';
 city = city.toUpperCase();
