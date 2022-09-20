@@ -4,38 +4,35 @@
     margin-top: 15px;
     display: block;
 }
-/* --------------------------------------------------------------------container-2------------------------------------------------------------------- */
-.container-2 {
+
+.main-container {
     display: block;
     margin: 30px 20px 0 20px;
 }
-.main-image {
-   
-    min-width: 100%;    
-}
+
 .main-subtittle {
     font-size: 30px;
     font-weight: bold;
-    line-height: 35px;
     margin-top: 20px;
 }
+
 .main-subtittle-2 {
     font-size: 20px;
-    line-height: 23px;
     margin-top: 30px;
 }
+
 .main-paragraph {
     font-style: normal;
-    font-weight: 300;
     font-size: 20px;
-    line-height: 23px;
     text-align: justify;
     margin-top: 30px;
 }
+
 .learn-bottom {
     margin-top: 25px;
     margin-bottom: 25px;
 }
+
 a[href="www.gigatech.com/learnmore"]{
     padding: 14px 36px;    
     width: 100px;
@@ -48,121 +45,132 @@ a[href="www.gigatech.com/learnmore"]{
     color: white;
     text-decoration: none;
 }
-/* -------------------------------------------------------------Function------------------------------------------------------------------------ */
-.boxes {
+
+.function-boxes {
     width: 100%;
     display: block;
 }
+
 .box {
     padding: 5px;
     margin: 10px;
 }
+
 .secondary-subtitle {
     margin: 30px 25px 0 25px;
     font-style: normal;
     font-size: 30px;    
 }
+
 .boxes-descriptions {
     font-style: normal;
     font-size: 20px;
     margin-top: 10px;
     margin-bottom: 5px;
 }
+
 .p-boxes {
     font-style: normal;
     font-size: 12px;
 }
-/* -----------------------------------------------------Why track time with Trackgenix?-------------------------------------------------------- */
-.container {
+
+.container-why-track {
     width: 100%;   
     display: block;
 }
+
 .why-track {
     padding: 15px;
     margin: 25px;
     font-style: normal;
-    font-weight: 700px;
     font-size: 30px;
     background-color: white;
     color: #373867;
     border-radius: 15px;
 }
-/* ----------------------------------------------------------------CONTACT US--------------------------------------------------------------------- */
+
 .container-contact-us {
     margin: 15px;
 }
+
 .Contact {
     font-style: normal;
-    font-weight: 700px;
     font-size: 30px;
-    line-height: 35px;
+    
 }
+
 .input {
     width: 95%;
     padding: 5px 10px 5px 10px;
     margin: 5px 10px 5px 10px;
+    color: white;
+    background-color: #373867;
+    border: 1px solid white;
+    border-radius: 5px;
 }
+
 .text-area {
     width: 95%;
     padding: 5px 10px 5px 10px;
-    margin: 5px 10px 5px 10px;
+    margin: 5px 10px 15px 10px;
+    color: white;
+    background-color: #373867;
+    border: 1px solid white;
+    border-radius: 5px;
 }
+
 .btn-submit {
     padding: 5px 30px;    
     width: 100px;
     background-color: #49A37B;
     border-radius: 5px;
     font-style: normal;
-    font-weight: 350;
     font-size: 15px;
     color: white;
 }
+
 .btn-reset {
     padding: 5px 30px;    
     width: 100px;
     background-color: #f13312;
     border-radius: 5px;
     font-style: normal;
-    font-weight: 350;
     font-size: 15px;
     color: white;
 }
 
-/* --------------------------------------------------------------ABOUT US------------------------------------------------------------------------- */
 .clean-float {
     clear: both;
-} 
+}
+
 .about {
     margin: 30px 15px;
 }
+
 .about-us {
     font-style: normal;
-    font-weight: 700px;
     font-size: 30px;
-    line-height: 35px;
 }
-.lorem {
+
+.lorem-tittle {
     font-style: normal;
-    font-weight: 400;
     font-size: 20px;
-    line-height: 23px;
     padding: 5px;
     margin: 5px;
 }
+
 .p-lorem {
     font-style: normal;
-    font-weight: 400;
     font-size: 12px;
-    line-height: 14px;
 }
+
 .ament {
     font-style: normal;
-    font-weight: 400;
     font-size: 20px;
-    line-height: 23px;
     padding: 5px;
     margin: 5px;
 }
+
 .p-ament {
     font-style: italic;
     font-weight: 400;
@@ -170,73 +178,75 @@ a[href="www.gigatech.com/learnmore"]{
     line-height: 14px;
     margin: 10px 10px 0 50px;
 }
+
 .p-button {
-    font-weight: 400;
     font-size: 12px;
-    line-height: 14px;
     text-align: justify;
 }
 .lorem-2 {
     font-style: normal;
-    font-weight: 400;
     font-size: 20px;
-    line-height: 23px;
 }
+
 .mobile-version {
     float: right;
     padding: 10px;
 }
-.float-left {
+
+.image-left {
     float: left;
     padding: 10px;
     display: none;
 }
-.float-rigth {
+
+.image-rigth {
     float: right;
     padding: 10px;
     display: none;
 }
+
 .secundary-image {
     width: 238.58px;
     border: 2px solid white;
     border-radius: 60px;
 }
+
 .txt-2 {
     display: none;
 }
+
 .txt-3 {
     display: none;
     padding: 5px;
     margin: 5px;
 }
+
 .txt-4 {
     display: none;
 }
+
 .txt-5 {
     display: none;
     margin: 5px;
     padding: 5px;
 }
 
-/* --------------------------------------------------------LISTS-------------------------------------------------- */
 .list-container {
     display: block;
     margin: 15px;
     width: 100%;
 }
+
 .footer-subtittles {
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
 }
+
 .footer-list {
     padding: 15px;
 }
-
-
-
-
 
 @media screen and (min-width: 768px) {
     .box {
@@ -253,14 +263,14 @@ a[href="www.gigatech.com/learnmore"]{
     .box-txt {
         flex: 1;
     }    
-    .container { 
+    .container-why-track { 
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
     .why-track {
-    flex: 2;
-    flex-basis: 40%;
+        flex: 2;
+        flex-basis: 40%;
     }
     .input-container{
         display: flex;
@@ -280,14 +290,14 @@ a[href="www.gigatech.com/learnmore"]{
     .txt-1 {
         display: none;
     }
-    .float-left {
+    .image-left {
         display: inline;
         margin: 15px;        
     }
     .txt-3 {
         display: inline;
     }
-    .float-rigth {
+    .image-rigth {
         display: inline;
         margin: 15px;       
     }
@@ -299,25 +309,29 @@ a[href="www.gigatech.com/learnmore"]{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        }
+    }
 }
 
 @media screen and (min-width: 1024px) {
     .container-body {
         width: 75%;
     }
-    .container-2 {
+    .main-container {
         display: flex;
         justify-content:flex-start;  
         align-items: flex-start;
     }
+    .main-image {
+        padding: 20px;
+    }
+
     .left-cell {
         order: 1;
     }
     .rigth-cell {
         order: 2;
     }
-    .boxes {
+    .function-boxes {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -340,17 +354,17 @@ a[href="www.gigatech.com/learnmore"]{
     .box-txt {
         flex: 1;
     }  
-    .container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    .container-why-track {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
     .why-track {
-    flex: 1;
-    flex-basis: 10%;
+        flex: 1;
+        flex-basis: 10%;
     }
     .img-track{
-    float: inline-end;
+        float: inline-end;
     }
     .p-lorem {
          display: inline;

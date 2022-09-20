@@ -6,17 +6,19 @@
     color: white;
     background-color: #373867;
 }
+
 .social-media {
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
-.s-m{
+
+.social-media-icons {
     padding: 10px;
 }
+
 @media screen and (min-width: 1024px) {
     .footer {
-        width: 73%;
-        float: right;
+        width: 75%;
     }
 }
