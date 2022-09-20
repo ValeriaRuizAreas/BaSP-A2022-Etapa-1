@@ -1,6 +1,5 @@
 .sidebar {
-    position:fixed;
-    overflow-y: scroll;
+    position:absolute;
     width: 0px;
     height: 100%;
     background-color: #262862;
@@ -8,15 +7,9 @@
     color: white;
     display: none;
 }
-@media screen and (min-width: 1024px) {
-    .sidebar {
-        width: 27%;
-        display: block;
-    }
-}
 .search-button {
     padding: 20px;
-    margin: 40px;
+    margin: 20px;
     height: 5px;
     color: white;
     background-color: #262862;
@@ -65,4 +58,11 @@
     padding: 20px 0 25px 0;
     border-bottom: 1px solid #49A37B; 
     width: 90%;
+}
+
+@media screen and (min-width: 1024px) {
+    .sidebar {
+        width: 25%;
+        display: inline;
+    }
 }

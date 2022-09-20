@@ -4,19 +4,14 @@
     margin-top: 15px;
     display: block;
 }
-@media screen and (min-width: 1024px) {
-    .container-body {
-        width: 73%;
-    }
-}
 /* --------------------------------------------------------------------container-2------------------------------------------------------------------- */
 .container-2 {
     display: block;
     margin: 30px 20px 0 20px;
 }
 .main-image {
-    max-width: 100%;
-    padding: 0 20px;    
+   
+    min-width: 100%;    
 }
 .main-subtittle {
     font-size: 30px;
@@ -53,24 +48,6 @@ a[href="www.gigatech.com/learnmore"]{
     color: white;
     text-decoration: none;
 }
-
-@media screen and (min-width: 1024px) {
-    .container-2 {
-        display: flex;
-        justify-content:flex-start;  
-        align-items: flex-start;
-    }
-    .left-cell {
-        order: 1;
-    }
-    .rigth-cell {
-        order: 2;
-        width: 500%;
-    }
-    .main-image{
-        padding-top: 40px;
-    }
-}
 /* -------------------------------------------------------------Function------------------------------------------------------------------------ */
 .boxes {
     width: 100%;
@@ -95,49 +72,7 @@ a[href="www.gigatech.com/learnmore"]{
     font-style: normal;
     font-size: 12px;
 }
-@media screen and (min-width: 768px) {
-    .box {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;  
-        align-items:flex-start; 
-    }
-    .box-img {
-        flex: 0;
-        padding-right: 10px;
-
-    }
-    .box-txt {
-        flex: 1;
-    }    
-}
-@media screen and (min-width: 1024px) {
-    .boxes {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;  
-        align-items:flex-start; 
-    }
-    .box {
-        flex: 2;
-        flex-basis: 40%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;  
-        align-items:flex-start; 
-    }
-    .box-img {
-        flex: 0;
-        padding-right: 10px;
-    }
-    .box-txt {
-        flex: 1;
-    }  
-}
-/* ------------------------------------------------------Why track time with Trackgenix?-------------------------------------------------------- */
+/* -----------------------------------------------------Why track time with Trackgenix?-------------------------------------------------------- */
 .container {
     width: 100%;   
     display: block;
@@ -152,31 +87,6 @@ a[href="www.gigatech.com/learnmore"]{
     color: #373867;
     border-radius: 15px;
 }
-@media screen and (min-width: 768px) {
-    .container { 
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .why-track {
-    flex: 2;
-    flex-basis: 40%;
-    }
-}
-@media screen and (min-width: 1024px) {
-    .container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .why-track {
-    flex: 1;
-    flex-basis: 10%;
-    }
-}
-.img-track{
-    float: inline-end;
-}
 /* ----------------------------------------------------------------CONTACT US--------------------------------------------------------------------- */
 .container-contact-us {
     margin: 15px;
@@ -188,12 +98,12 @@ a[href="www.gigatech.com/learnmore"]{
     line-height: 35px;
 }
 .input {
-    width: 85%;
+    width: 95%;
     padding: 5px 10px 5px 10px;
     margin: 5px 10px 5px 10px;
 }
 .text-area {
-    width: 85%;
+    width: 95%;
     padding: 5px 10px 5px 10px;
     margin: 5px 10px 5px 10px;
 }
@@ -217,29 +127,7 @@ a[href="www.gigatech.com/learnmore"]{
     font-size: 15px;
     color: white;
 }
-@media screen and (min-width: 768px) {
-    .input {
-        width: 95%;
-        padding: 5px 10px 5px 10px;
-        margin: 5px 10px 5px 10px;
-    }
-    .text-area {
-        width: 95%;
-        padding: 5px 10px 5px 10px;
-        margin: 5px 10px 5px 10px;
-    }
-}
-@media screen and (min-width: 768px) {
-    .input-container{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .flex-input {
-        flex: 1;
-        padding-right: 20px;
-    }
-}
+
 /* --------------------------------------------------------------ABOUT US------------------------------------------------------------------------- */
 .clean-float {
     clear: both;
@@ -318,61 +206,18 @@ a[href="www.gigatech.com/learnmore"]{
 }
 .txt-3 {
     display: none;
+    padding: 5px;
+    margin: 5px;
 }
 .txt-4 {
     display: none;
 }
 .txt-5 {
     display: none;
+    margin: 5px;
+    padding: 5px;
 }
-@media screen and (min-width: 768px) {
-    .mobile-version {
-        display: none;
-    }
-    .p-lorem {
-        display: none;
-    }
-    .txt-1 {
-        display: none;
-    }
-    .float-left {
-        display: inline;
-        margin: 15px;        
-    }
-    .txt-3 {
-        display: inline;
-        padding: 5px;
-        margin: 5px;
-    }
-    .float-rigth {
-        display: inline;
-        margin: 15px;       
-    }
-    .txt-5 {
-        display: inline;
-        margin: 5px;
-        padding: 5px;
-    }
-}
-@media screen and (min-width: 1024px) {
-   .p-lorem {
-        display: inline;
-        margin-bottom: 5px;
-    }
-    .p-ament {
-        margin: 5px;
-    }
-    .txt-1 {
-        display: inline;
-        margin: 10px;
-    }
-    .txt-2 {
-        display: inline;
-    }
-    .txt-4 {
-        display: inline;
-    }
-}
+
 /* --------------------------------------------------------LISTS-------------------------------------------------- */
 .list-container {
     display: block;
@@ -388,7 +233,67 @@ a[href="www.gigatech.com/learnmore"]{
 .footer-list {
     padding: 15px;
 }
+
+
+
+
+
 @media screen and (min-width: 768px) {
+    .box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;  
+        align-items:flex-start; 
+    }
+    .box-img {
+        flex: 0;
+        padding-right: 10px;
+    }
+    .box-txt {
+        flex: 1;
+    }    
+    .container { 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .why-track {
+    flex: 2;
+    flex-basis: 40%;
+    }
+    .input-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .flex-input {
+        flex: 1;
+        padding-right: 20px;
+    }
+    .mobile-version {
+        display: none;
+    }
+    .p-lorem {
+        display: none;
+    }
+    .txt-1 {
+        display: none;
+    }
+    .float-left {
+        display: inline;
+        margin: 15px;        
+    }
+    .txt-3 {
+        display: inline;
+    }
+    .float-rigth {
+        display: inline;
+        margin: 15px;       
+    }
+    .txt-5 {
+        display: inline;
+    }
     .list-container{
         display: flex;
         flex-direction: row;
@@ -397,3 +302,71 @@ a[href="www.gigatech.com/learnmore"]{
         }
 }
 
+@media screen and (min-width: 1024px) {
+    .container-body {
+        width: 75%;
+    }
+    .container-2 {
+        display: flex;
+        justify-content:flex-start;  
+        align-items: flex-start;
+    }
+    .left-cell {
+        order: 1;
+    }
+    .rigth-cell {
+        order: 2;
+    }
+    .boxes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;  
+        align-items:flex-start; 
+    }
+    .box {
+        flex: 2;
+        flex-basis: 40%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;  
+        align-items:flex-start; 
+    }
+    .box-img {
+        flex: 0;
+        padding-right: 10px;
+    }
+    .box-txt {
+        flex: 1;
+    }  
+    .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+    .why-track {
+    flex: 1;
+    flex-basis: 10%;
+    }
+    .img-track{
+    float: inline-end;
+    }
+    .p-lorem {
+         display: inline;
+         margin-bottom: 5px;
+     }
+     .p-ament {
+         margin: 5px;
+     }
+     .txt-1 {
+         display: inline;
+         margin: 10px;
+     }
+     .txt-2 {
+         display: inline;
+     }
+     .txt-4 {
+         display: inline;
+     }
+ }
