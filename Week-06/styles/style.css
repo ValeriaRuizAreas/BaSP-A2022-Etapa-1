@@ -1,0 +1,17 @@
+body {
+    background-color: #373867;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+a[href="www.gigatech.com"]{
+    color: white;
+    text-decoration: none;    
+}
+
+.line {
+    border-bottom: 2px solid #49A37B;
+    width: 98%;
+    padding: 10px 0;
+    margin-left: 1%;
+}

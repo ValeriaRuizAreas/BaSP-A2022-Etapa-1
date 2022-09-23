@@ -1,0 +1,12 @@
+.header {
+    display: flex;
+    justify-content:flex-start;  
+    align-items:baseline;
+}
+
+.container-header {
+    display: flex;
+    justify-content: flex-start;  
+    align-items: baseline;
+    flex-direction: column;    
+}
