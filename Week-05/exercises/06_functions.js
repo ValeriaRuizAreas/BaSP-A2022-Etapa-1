@@ -70,7 +70,6 @@ sum1 = sumE(8, 5.3);
 console.log('8 + 5.3 =', sum1);
 
 function sumE(a, b){
- 
     return validated(a) + validated(b);
 }
 

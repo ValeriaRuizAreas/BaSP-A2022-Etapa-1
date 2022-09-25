@@ -368,20 +368,20 @@ a[href="www.gigatech.com/learnmore"]{
         float: inline-end;
     }
     .p-lorem {
-         display: inline;
-         margin-bottom: 5px;
+        display: inline;
+        margin-bottom: 5px;
      }
      .p-ament {
-         margin: 5px;
+        margin: 5px;
      }
      .txt-1 {
-         display: inline;
-         margin: 10px;
+        display: inline;
+        margin: 10px;
      }
      .txt-2 {
-         display: inline;
+        display: inline;
      }
      .txt-4 {
-         display: inline;
+        display: inline;
      }
  }
