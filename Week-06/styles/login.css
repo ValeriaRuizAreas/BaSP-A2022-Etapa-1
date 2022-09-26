@@ -54,7 +54,7 @@ form .title {
 }
 
 form label {
-    margin-bottom: 35px;
+    margin-top: 35px;
 }
 
 form label .fa-solid {
@@ -73,7 +73,7 @@ form label input {
     display:flex;
     align-items: flex-end;
     font-size: 12px;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 .fa-regular {
@@ -82,7 +82,7 @@ form label input {
 }
 
 form .link {
-    margin-bottom: 15px;
+    margin: 20px 0;
     color: black;
     font-size: 14px;
     text-decoration: none;
@@ -90,6 +90,7 @@ form .link {
 
 form button {
     padding: 10px 15px;
+    margin-top: 30px;
     background-color: #aace9b;
     border: 1px solid #373867;
     border-radius: 5px;
@@ -97,4 +98,15 @@ form button {
     cursor: pointer;
 }
  
+h4 {
+    font-size: 10px;
+    font-weight: bold;
+    color: crimson;
+}
 
+.create-account {
+    display: flex;
+    justify-content: center;  
+    align-items: baseline;
+    margin: 20px;
+}
