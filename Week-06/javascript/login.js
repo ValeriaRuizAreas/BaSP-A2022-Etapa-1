@@ -30,13 +30,7 @@ window.onload = function(){
             return;
         }
 
-        if (email.value.toLowerCase() == 'petra_arcia@gigatech.com' && password.value == 'milanesa123'){
-            alert('login succesful with ' + email.value + '/' + password.value);
-            return;
-        }
-
-        alert('email or password invalid');
-        console.log(email.value, password.value);
+        alert('login succesful with ' + email.value + '/' + password.value);
     }
 
     email.onblur = function(e){
@@ -68,7 +62,6 @@ window.onload = function(){
         if (em.match(validEmail) == null){
             return em + ' is not a valid email';   
         }
-
         return '';
     }
 
@@ -76,7 +69,61 @@ window.onload = function(){
         if (pas == ''){
             return 'password can not be empty';
         }
-
+        if (pas.length <8 ){
+            return 'must have more than 8 characters';
+        }
+        if (validateAlpha(pas) == false){
+            return 'use only character and numbers'; 
+        }
+        if (haveSpaces(pas)){
+            return 'password can not hace spaces';
+        }
+        if (haveNumbers(pas) == false){
+            return 'must have numbers';
+        }
+        if (haveCharacters(pas) == false){
+            return 'must have at lease one character'
+        }
         return '';
+    }
+
+    function validateAlpha(str){
+        var special = ' äëïöüáéíóúáéíóúâêîôûàèìòùñç';
+        for (i=0; i < str.length; i++){
+            var c = str.substring(i, i+1).toLowerCase();
+            if (((c >= 'a' && c <= 'z') || (c >= '0' && c <= '9') ||  special.lastIndexOf(c) >=0) == false){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    function haveSpaces(str){
+        spc = ' ';
+        if (str.trim().lastIndexOf(spc)>=0){
+            return true;
+        }
+        return false;
+    }
+
+    function haveCharacters(str){
+        var special = 'äëïöüáéíóúáéíóúâêîôûàèìòùñç';
+        for (i=0; i < str.length; i++){
+            var c = str.substring(i, i+1).toLowerCase();
+            if (((c >= 'a' && c <= 'z') ||  special.lastIndexOf(c) >=0)){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    function haveNumbers(str){
+        for (i=0; i < str.length; i++){
+            var c = str.substring(i, i+1);
+            if ((c >= '0' && c <= '9')){
+                return true;
+            }
+        }
+        return false;
     }
 }
