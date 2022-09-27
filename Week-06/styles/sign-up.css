@@ -114,9 +114,16 @@ h4 {
     color: crimson;
 }
 
-/* @media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
 
-    form {
-        flex-direction: row;
+.desktop-design {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
     }
-} */
+
+.dates {
+    padding: 5px;
+    margin: 5px;
+}
+}
