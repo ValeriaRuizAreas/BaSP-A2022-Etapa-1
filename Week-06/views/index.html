@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="../javascript/contact.js"></script>
         <title>
             Trackgenix de Giga Tech Software S.A.
         </title>
@@ -253,24 +254,28 @@
                 <form>
                     <div class="input-container">
                         <div class="flex-input">
-                            <input class="input" type="text" placeholder="Name" />
+                            <input class="input" id="name" type="text" placeholder="Name" />
                         </div>
+                        <p class="alert" id="errorName"></p>
                         <div class="flex-input">
-                            <input class="input" type="text" placeholder="Email" />
+                            <input class="input" type="text" id="email" placeholder="Email" />
                         </div>
+                        <p class="alert" id="errorEmail"></p>
                     </div>
-                    <select class="input" name="Area">
-                        <option value="area">Area</option>
+                    <select class="input" id="area" name="Area">
+                        <option value=""></option>
                         <option value="humanResources">Human Resources</option>
                         <option value="systems">Systems</option>
                         <option value="marketing">Marketing</option>
                     </select>
+                    <p class="alert" id="errorSelectorArea"></p>
                     <h4>
                         Message
                     </h4>
-                    <textarea class="text-area" name="message" rows="6"></textarea>
-                    <button class="btn-submit" type="button">Submit</button>
-                    <button class="btn-reset" type="button">Reset</button>
+                    <textarea class="text-area" id="message" name="message" rows="6"></textarea>
+                    <p class="alert" id="errorMessage"></p>
+                    <button id="button" class="btn-submit" type="button">Submit</button>
+                    <button id="reset" class="btn-reset" type="button">Reset</button>
                 </form>
                 <div class="line"></div>
             </section>

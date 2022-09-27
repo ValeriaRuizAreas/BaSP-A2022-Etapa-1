@@ -42,8 +42,6 @@ a[href="www.gigatech.com/learnmore"]{
     font-style: normal;
     font-weight: 350;
     font-size: 15px;
-    color: white;
-    text-decoration: none;
 }
 
 .function-boxes {
@@ -137,6 +135,12 @@ a[href="www.gigatech.com/learnmore"]{
     font-style: normal;
     font-size: 15px;
     color: white;
+}
+
+.alert {
+    font-size: 10px;
+    font-weight: bold;
+    color:red;
 }
 
 .clean-float {
