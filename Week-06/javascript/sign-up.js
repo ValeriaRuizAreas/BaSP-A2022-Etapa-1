@@ -2,7 +2,7 @@ window.onload = function(){
 
     var buttonHome = document.getElementById('buttonHome').addEventListener('click', clickButtonHome);
     function clickButtonHome(e){
-        document.location.href = 'index.html';
+        document.location.href = 'https://valeriaruizareas.github.io/BaSP-A2022-Etapa-1/Week-06/views/index.html';
     }
 
     var button = document.getElementById('button');
@@ -244,8 +244,6 @@ window.onload = function(){
         e.preventDefault();
         errorRepeatPassword.innerText = '';    
     }
-
-    // Validate fields---------------------------------------------------
     function validateFirstName(fn){
          if (fn == ''){
             return 'first name can not be empty';
@@ -438,8 +436,6 @@ window.onload = function(){
         }
         return '';
     }
-
-    // Validation---------------------------------------------------------------------
 
     function validateCharacters(str){
         var special = 'äëïöüáéíóúáéíóúâêîôûàèìòùñç';
