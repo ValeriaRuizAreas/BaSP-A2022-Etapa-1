@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../javascript/sign-up.js"></script>
+        <title> Trackgenix Sign Up</title>
+        <link rel="stylesheet" href="../styles/reset.css">
+        <link rel="stylesheet" href="../styles/sign-up.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">  
+    </head>
+    <body>
+        <div class="container-header">
+            <header class="header">
+                <div class="home-button">
+                    <button id="buttonHome">Home</button>
+                </div>
+                <div class="container-text">
+                    <h1 class="title">
+                        Trackgenix
+                    </h1>
+                </div>                    
+                <div>    
+                    <h2 class="register">
+                        Register/Employee
+                    </h2>
+                </div>
+            </header>
+        </div>    
+        <div class="container-signup">
+            <form action="">
+                <div class="content-information">
+                    <h3 class="title">
+                        Sign Up
+                    </h3>
+                    <div class="desktop-design">
+                        <div class="dates">
+                            <fieldset>
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName">
+                            </fieldset>
+                            <h4 id="errorFirstName"></h4>
+                            <fieldset>
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName">
+                            </fieldset>
+                            <h4 id="errorLastName"></h4>
+                            <fieldset>
+                                <label for="dni">DNI</label>
+                                <input type="text" id="dni">
+                            </fieldset>
+                            <h4 id="errorDni"></h4>
+                            <fieldset class="date-of-birth">
+                                <label for="dateOfBirth">Date of birth</label>
+                                <input placeholder="dd/mm/aaaa" type="date" id="dateOfBirth">
+                            </fieldset>
+                            <h4 id="errorDateOfBirth"></h4>
+                            <fieldset>
+                                <div>
+                                    <i class="fa-solid fa-phone"></i>
+                                    <label for="phone">Phone</label>
+                                </div>
+                                <input type="text" id="phone">
+                            </fieldset>
+                            <h4 id="errorPhone"></h4>
+                            <fieldset>
+                                <div>
+                                    <i class="fa-solid fa-map-location-dot"></i>
+                                    <label for="address">Address</label>
+                                </div>
+                                <input type="text" id="address">
+                            </fieldset>
+                            <h4 id="errorAddress"></h4>
+                        </div>
+                        <div class="dates">
+                            <fieldset>
+                                <label for="city">City</label>
+                                <input type="text" id="city">
+                            </fieldset>
+                            <h4 id="errorCity"></h4>
+                            <fieldset>
+                                <label for="zipCode">Zip code</label>
+                                <input type="text" id="zipCode">
+                            </fieldset>
+                            <h4 id="errorZipCode"></h4>
+                            <fieldset>
+                                <div>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <label for="email">Email</label>
+                                </div>
+                                <input type="text" id="email">
+                            </fieldset>
+                            <h4 id="errorEmail"></h4>
+                            <fieldset>
+                                <div>
+                                    <i class="fa-solid fa-lock"></i>
+                                    <label for="password">Password</label>
+                                </div>
+                                <div>
+                                    <input type="password" id="password">
+                                    <i class="fa-regular fa-eye-slash" id="hide1"></i>
+                                </div>
+                            </fieldset>
+                            <h4 id="errorPassword"></h4>
+                            <fieldset>
+                                <div>
+                                    <i class="fa-solid fa-lock"></i>
+                                    <label for="repeatPassword">Repeat password</label>
+                                </div>
+                                <div>
+                                    <input type="password" id="repeatPassword">
+                                    <i class="fa-regular fa-eye-slash" id="hide2"></i>
+                                </div>
+                            </fieldset>
+                            <h4 id="errorRepeatPassword"></h4>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="error-message">
+                            If an error occurs when filing a form, a message will show here
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <button id="button">CREATE ACCOUNT</button>
+                    <div class="footer">
+                        <p class="have-account">
+                            Already have and account? 
+                        </p>
+                        <a href="login.html">Sign In</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
