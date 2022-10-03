@@ -40,7 +40,21 @@ window.onload = function(){
     var repeatPassword= document.getElementById('repeatPassword');
     var errorRepeatPassword = document.getElementById('errorRepeatPassword');
 
-   
+
+    if(localStorage.getItem('name')!=null){    
+        firstName.value = localStorage.getItem('name');
+        lastName.value = localStorage.getItem('lastName');
+        dni.value = localStorage.getItem('dni');
+        dateOfBirth.value = localStorage.getItem('dob');
+        phone.value = localStorage.getItem('phone');
+        address.value = localStorage.getItem('address');
+        city.value = localStorage.getItem('city');
+        zipCode.value = localStorage.getItem('zip');
+        email.value = localStorage.getItem('email');
+        password.value = localStorage.getItem('password');
+        repeatPassword.value = password.value;   
+    }
+
     var hide1 = document.getElementById('hide1');
     hide1.onclick = function(e){
         e.preventDefault();
@@ -132,7 +146,48 @@ window.onload = function(){
             return;
         }
 
-        alert('login succesful with ' + firstName.value + '/' + lastName.value + '/' + dni.value + '/' + dateOfBirth.value + '/' + phone.value + '/' + address.value + '/' + city.value + '/' + zipCode.value + '/' + email.value + '/' + password.value + '/' + repeatPassword.value);
+        var url = 'https://basp-m2022-api-rest-server.herokuapp.com/signup?';
+        url+='name=' + firstName.value; 
+        url+='&lastName=' + lastName.value;
+        url+='&dni=' + dni.value;
+        url+='&dob=' + formatDate(dateOfBirth.value);
+        url+='&phone=' + phone.value;
+        url+='&address='  + address.value; 
+        url+='&city=' + city.value;
+        url+='&zip=' + zipCode.value;
+        url+='&email=' + email.value;
+        url+='&password=' + password.value;
+
+        var promise = fetch(url);
+ 
+        promise
+        .then(function (res){
+            return res.json();
+        })
+        .then(function (data){
+            
+            if (data.success == true){
+
+                localStorage.setItem('name', firstName.value);
+                localStorage.setItem('lastName', lastName.value);
+                localStorage.setItem('dni', dni.value);
+                localStorage.setItem('dob', dateOfBirth.value);
+                localStorage.setItem('phone', phone.value);
+                localStorage.setItem('address', address.value);
+                localStorage.setItem('city', city.value);
+                localStorage.setItem('zip', zipCode.value);
+                localStorage.setItem('email', email.value);
+                localStorage.setItem('password', password.value);       
+
+                alert('SUCCESS: ' + data.msg);
+            } else {
+                var errors = data.errors;
+                alert('ERROR: ' + errors[0].msg);
+            }
+        })
+        .catch(function (error){
+            alert(error);
+        })
     }
 
     firstName.onblur = function(e){
@@ -314,7 +369,7 @@ window.onload = function(){
         if (ad.length <=5 ){
             return 'address must have at least 5 characters';
         }
-
+        
         if (validateAlpha(ad) == false){
             return 'use only character, numbers or spaces'; 
         }
@@ -330,6 +385,7 @@ window.onload = function(){
         if (haveSpaces(ad)==false){
             return 'must have at least one space';
         }
+        
         return '';
     }
     
@@ -463,4 +519,9 @@ window.onload = function(){
         }
         return false;
     }
+
+    function formatDate(date) {
+        var d = new Date(date);
+        return d.getDate().toString().padStart(2, '0') + '/' +  (d.getMonth() + 1).toString().padStart(2, '0') + '/' + d.getFullYear();
+      }
 }

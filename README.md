@@ -11,3 +11,5 @@ Styling the page by giving it responsive properties and using flexbox. Media que
 A new folder was created, it contains the JavaScript files for each exercises. Corrections are made to the CSS elements of week 4.
 # Week 6:
 HTML format, CSS styles and JV validations were created for the Login and Sign Up screens, as well as for the "Contact Us" field of the Landing page of week 4.
+# Week 7:
+Week 6 was copied to week 7 and errors were corrected. The form data was sent as query params and the data obtained was saved in the LocalStorage. 
