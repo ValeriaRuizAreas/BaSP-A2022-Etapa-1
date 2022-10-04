@@ -15,52 +15,105 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">  
     </head>
-    <body> 
-        <div class="container-header">
-            <header class="header">
-                <div class="home-button">
-                    <button id="buttonHome">Home</button>
-                </div>
-                <div class="container-text">
-                    <h1 class="title">
-                        Trackgenix
-                    </h1>
-                </div>                    
-                <div>    
-                    <h2 class="register">
-                        Register
-                    </h2>
-                </div>
-            </header>
-        </div>    
-        <div class="container-login">
-            <form action="">
-                <h3 class="title">
-                    Sign In
+    <body>
+        <aside class="sidebar">
+            <div class="search-container">
+                <input class="search-button" type="text" placeholder= "Search" />
+            </div>
+            <div class="first-section">                    
+                <ul>
+                    <li class="box-side">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="box-side">
+                        <a href="sign-up.html">Sign Up</a>
+                    </li>
+                    <li class="box-side">
+                        <a href="login.html"> Log In</a>
+                    </li>
+                </ul>
+            </div>
+            <section class="get-in-touch-container">
+                <h3 class="get-in-touch">
+                    Get in touch
                 </h3>
-                <fieldset>
-                    <i class="fa-solid fa-envelope"></i>
-                    <input placeholder="email" type="text" id="email">
-                </fieldset>
-                <h4 id="errorEmail"></h4>
-                <fieldset>
-                    <i class="fa-solid fa-lock"></i>
-                    <input placeholder="password" type="password" id="password">
-                </fieldset>
-                <h4 id="errorPassword"></h4>
-                <div class="check-remember">
-                    <i class="fa-regular fa-square-check"></i>
-                    <p>Remember me</p>
-                </div>
-                <a href="#" class="link">Forgot password?</a>
-                <button id="button">Continue</button>
-                <div class="create-account">
-                    <p class="">
-                        Do not have an account? 
-                    </p>
-                    <a href="sign-up.html">Sign Up</a>
-                </div>
-            </form>
+                <p class="p-sidebar">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy
+                    text ever since the 1500s, when an unknown printer took a galley
+                    of type and scrambled it to make a type specimen book.
+                </p>
+                <address>  
+                    <div class="address">                     
+                        <img class="img-sidebar" src="../assets/icon.address.png" alt="Address_image" />
+                        <p>
+                            1245 Sffeinvrjrs, Bnaudasd
+                        </p>
+                    </div>
+                    <div class="address">                     
+                        <img class="img-sidebar" src="../assets/icon-email old.png" alt="Email_image" /> 
+                        <p>
+                            sikfifkgnmss@gmail.com
+                        </p>
+                    </div>
+                    <div class="address">                     
+                                <img class="img-sidebar" src="../assets/icon-telephone.png" alt="Telephone_image" /> 
+                        <p>
+                            958585412225
+                        </p>
+                    </div>
+                </address>
+            </section>
+        </aside> 
+        <div class="container-body">
+            <div class="container-header">
+                <header class="header">
+                    <div class="menu-button">
+                        <img id="buttonHome" src="../assets/menu-bottom.png" alt="menu_button">
+                    </div>
+                    <div class="container-header">
+                        <div class="container-text">
+                            <h1 class="tittle">
+                                Trackgenix
+                            </h1>
+                        </div>                    
+                        <div>    
+                            <h2 class="subtittle">
+                                by GigaTech Software Solutions SA
+                            </h2>
+                        </div>
+                    </div>
+                </header>
+            </div>    
+            <div class="container-login">
+                <form action="">
+                    <h3 class="title">
+                        Sign In
+                    </h3>
+                    <fieldset>
+                        <i class="fa-solid fa-envelope"></i>
+                        <input placeholder="email" type="email" id="email">
+                    </fieldset>
+                    <h4 id="errorEmail"></h4>
+                    <fieldset>
+                        <i class="fa-solid fa-lock"></i>
+                        <input placeholder="password" type="password" id="password"> 
+                    </fieldset>
+                    <h4 id="errorPassword"></h4>
+                    <div class="check-remember">
+                        <i class="fa-regular fa-square-check"></i>
+                        <p>Remember me</p>
+                    </div>
+                    <a href="#" class="link">Forgot password?</a>
+                    <button id="button">Continue</button>
+                    <div class="create-account">
+                        <p class="">
+                            Do not have an account? 
+                        </p>
+                        <a class="sign-up" href="sign-up.html">Sign Up</a>
+                    </div>
+                </form>
+            </div>
         </div>
     </body>
 </html>

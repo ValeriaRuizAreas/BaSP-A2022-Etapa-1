@@ -1,31 +1,118 @@
-.container-header {
+body {
     background-color: #373867;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sidebar {
+    position:absolute;
+    width: 0px;
+    background-color: #262862;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    display: none;
+}
+
+a {
+    color: white;
+    text-decoration: none; 
+}
+
+.sign-up {
+    color: blue;
+}
+
+.search-button {
+    padding: 20px;
     margin: 20px;
+    height: 5px;
+    color: white;
+    background-color: #262862;
+    border: 2px solid #49A37B;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 16px;  
+}
+
+.search-container {
+    background-color: #373867;
+    width: 100%;
+    height: 120px;
+}
+
+.get-in-touch-container {
+    padding-top: 20px 0 0 5px;
+    display: block;
+}
+
+.box-side {
+    margin: 15px;
+    padding: 20px 0;
+    border-bottom: 1px solid #49A37B;
+    width: 90%;
+}
+
+.get-in-touch {
+    margin: 15px;
+    padding: 40px 0 5px 0;
+    border-bottom: 1px solid #49A37B;
+    width: 90%;
+    font-size: 20px;
+}
+
+.p-sidebar {
+    margin: 15px;
+    padding-bottom: 5px;
+    font-size: 12px;
+}
+
+.contact-information {
+    margin-top: 5px;
+}
+
+.img-sidebar {
+    padding-right: 10px;
+}
+
+.address {
+    margin: 15px;
+    display:flex;
+    align-items: flex-end;
+    padding: 20px 0 25px 0;
+    border-bottom: 1px solid #49A37B; 
+    width: 90%;
 }
 
 .header {
     display: flex;
-    justify-content: space-between;  
-    align-items: baseline;
-    margin: 20px;
+    justify-content:flex-start;  
+    align-items:baseline;
 }
 
-.home-button {
+.container-header {
+    display: flex;
+    justify-content: flex-start;  
+    align-items: baseline;
+    flex-direction: column;    
+}
+
+.menu-button {
     margin: 15px 20px;
 }
 
-.title {
+.tittle {
     font-size: 40px;
     font-style: bold;
     line-height: 47px;
+    padding-right: 15px;
     color: white;
 }
 
-.register {
+.subtittle {
     font-size: 12px;
-    line-height: 14px;
-    color: white;  
+    line-height: 14px; 
+    color: white; 
 }
+
 
 .container-login {
     display: flex;
@@ -38,7 +125,7 @@
 form {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 70%;
     background: #fff;
     text-align: center;
     padding: 30px 35px;
@@ -55,6 +142,7 @@ form .title {
 
 form fieldset {
     margin-top: 35px;
+    padding: 5px;
 }
 
 form label .fa-solid {
@@ -110,3 +198,45 @@ h4 {
     align-items: baseline;
     margin: 20px;
 }
+
+.menu-button{
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 768px) {
+    .container-header {
+        flex-direction: row;    
+    }
+    
+    form {
+        width: 50%;
+        padding: 30px 30px;
+    }
+
+    form fieldset {
+        margin-top: 35px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .sidebar {
+        width: 25%;
+        display: inline;
+    }
+    .container-body {
+        width: 75%;
+        float: right;
+        margin-top: 30px;
+    }
+    
+    .menu-button {
+        display: none;
+    }
+
+
+
+}
+
+
+

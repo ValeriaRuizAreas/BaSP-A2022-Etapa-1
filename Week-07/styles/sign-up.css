@@ -1,5 +1,8 @@
-.container-header {
+body {
     background-color: #373867;
+}
+
+.container-header {
     margin: 20px;
 }
 
@@ -18,6 +21,10 @@
     font-size: 40px;
     font-style: bold;
     line-height: 47px;
+    color: white;
+}
+
+.subtitle {
     color: white;
 }
 
@@ -97,8 +104,12 @@ form button {
 
 a {
     font-size: 15px;
-    color: #1511b6;
+    color: white;
     text-decoration: none;
+}
+
+.login {
+    color: blue;
 }
 
 .footer {
@@ -114,16 +125,52 @@ h4 {
     color: crimson;
 }
 
-@media screen and (min-width: 1024px) {
 
-.desktop-design {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+@media screen and (min-width: 768px) {
+    .container-header {
+        flex-direction: row;    
+    }
+    .subtitle {
+        padding-left: 10px;
+        margin-left: 10px;
     }
 
-.dates {
-    padding: 5px;
-    margin: 5px;
 }
+.menu-button{
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+    .sidebar {
+        width: 25%;
+        display: inline;
+    }
+    .container-body {
+        width: 75%;
+        float: right;
+        margin-top: 30px;
+    }
+    
+    .menu-button {
+        display: none;
+    }
+
+    .container-login {
+        margin-top: 30px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .desktop-design {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        }
+
+    .dates {
+        padding: 5px;
+        margin: 5px;
+    }
 }

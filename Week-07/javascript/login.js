@@ -2,6 +2,11 @@ window.onload = function(){
 
     var buttonHome = document.getElementById('buttonHome').addEventListener('click', clickButtonHome);
     function clickButtonHome(e){
+        document.location.href = 'index.html';
+   }
+
+   
+    function clickButtonHome(e){
         document.location.href = 'https://valeriaruizareas.github.io/BaSP-A2022-Etapa-1/Week-06/views/index.html';
     }
 

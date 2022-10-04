@@ -1,8 +1,8 @@
 window.onload = function(){
 
-    var buttonHome = document.getElementById('buttonHome').addEventListener('click', clickButtonHome);
-    function clickButtonHome(e){
-        document.location.href = 'https://valeriaruizareas.github.io/BaSP-A2022-Etapa-1/Week-06/views/index.html';
+     var buttonHome = document.getElementById('buttonHome').addEventListener('click', clickButtonHome);
+     function clickButtonHome(e){
+         document.location.href = 'index.html';
     }
 
     var button = document.getElementById('button');
@@ -166,7 +166,7 @@ window.onload = function(){
         })
         .then(function (data){
             
-            if (data.success == true){
+            if (data.success == true){ 
 
                 localStorage.setItem('name', firstName.value);
                 localStorage.setItem('lastName', lastName.value);
@@ -332,8 +332,8 @@ window.onload = function(){
         if (dni == ''){
            return 'dni can not be empty';
        }
-       if (dni.length <=6 ){
-           return 'dni must have at least 7 characters';
+       if (dni.length <7 || dni.length >8 ){
+           return 'Dni must have between 7 and 8 numbers';
        }
        if (validateNumbers(dni) == false){
         return 'use only numbers'; 
@@ -522,6 +522,6 @@ window.onload = function(){
 
     function formatDate(date) {
         var d = new Date(date);
-        return d.getDate().toString().padStart(2, '0') + '/' +  (d.getMonth() + 1).toString().padStart(2, '0') + '/' + d.getFullYear();
+        return (d.getMonth() + 1).toString().padStart(2, '0') + '/' + d.getDate().toString().padStart(2, '0') + '/' +   d.getFullYear();
       }
 }
