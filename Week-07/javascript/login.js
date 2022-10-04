@@ -1,11 +1,29 @@
 window.onload = function(){
 
+   var modal = document.getElementById("myModal");
+   var modalText = document.getElementById("modalText");
+   var span = document.getElementsByClassName("close")[0];
+
+    function showModal(text){
+        modalText.innerText = text;
+        modal.style.display = "block";
+    }
+
+   span.onclick = function() {
+       modal.style.display = "none";
+       }
+
+   window.onclick = function(event) {
+       if (event.target == modal) {
+           modal.style.display = "none";
+       }
+   }
+
     var buttonHome = document.getElementById('buttonHome').addEventListener('click', clickButtonHome);
     function clickButtonHome(e){
         document.location.href = 'index.html';
    }
 
-   
     function clickButtonHome(e){
         document.location.href = 'https://valeriaruizareas.github.io/BaSP-A2022-Etapa-1/Week-06/views/index.html';
     }
@@ -24,15 +42,14 @@ window.onload = function(){
         var strMail = validateEmail(email.value);
         var strPwd  = validatePassword(password.value)
 
-        
         if (email.value == '' && password.value == ''){
-            alert('Email & Password are requiered');
+            showModal('Email and Password are requiered');
         
         } else if (strMail.length > 0){
-            alert(strMail);
+            showModal(strMail);
 
         } else if (strPwd.length > 0){
-            alert(strPwd);
+            showModal(strPwd);
         
         
         } else {
@@ -48,13 +65,13 @@ window.onload = function(){
                 var msg =  data.msg;
 
                 if (success == true){
-                    alert('SUCCESS: ' + msg);
+                    showModal('SUCCESS: ' + msg);
                 } else {
-                    alert('ERROR: ' + msg);
+                    showModal('ERROR: ' + msg);
                 }
             })
             .catch(function (error){
-                alert(error);
+                showModal(error);
             })
         }
 

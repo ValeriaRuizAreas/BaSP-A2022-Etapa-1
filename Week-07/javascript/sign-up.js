@@ -1,5 +1,24 @@
 window.onload = function(){
 
+    var modal = document.getElementById("myModal");
+    var modalText = document.getElementById("modalText");
+    var span = document.getElementsByClassName("close")[0];
+ 
+     function showModal(text){
+         modalText.innerText = text;
+         modal.style.display = "block";
+     }
+ 
+    span.onclick = function() {
+        modal.style.display = "none";
+        }
+ 
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
      var buttonHome = document.getElementById('buttonHome').addEventListener('click', clickButtonHome);
      function clickButtonHome(e){
          document.location.href = 'index.html';
@@ -39,7 +58,6 @@ window.onload = function(){
 
     var repeatPassword= document.getElementById('repeatPassword');
     var errorRepeatPassword = document.getElementById('errorRepeatPassword');
-
 
     if(localStorage.getItem('name')!=null){    
         firstName.value = localStorage.getItem('name');
@@ -82,67 +100,67 @@ window.onload = function(){
 
         str = validateFirstName(firstName.value);
         if (str.length > 0){
-            alert(str);
+            showModal(str);
             return;
         }
 
         str = validateLastName(lastName.value);
         if (str.length > 0){
-            alert(str);
+            showModal(str);
             return;
         }
 
         str = validateDni(dni.value);
         if (str.length > 0){
-            alert(str);
+            showModal(str);
             return;
         }
 
         str = validateDateOfBirth(dateOfBirth.value);
         if (str.length > 0){
-            alert(str);
+            showModal(str);
             return;
         }
 
         str = validatePhone(phone.value);
         if (str.length > 0){
-            alert(str);
+            showModal(str);
             return;
         }
         
         str = validateAddress(address.value);
         if (str.length > 0){
-            alert(str);
+            showModal(str);
             return;
         }
         
         str = validateCity(city.value);
         if (str.length > 0){
-            alert(str);
+            showModal(str);
             return;
         }
 
         str = validateZipCode(zipCode.value);
         if (str.length > 0){
-            alert(str);
+            showModal(str);
             return;
         }
 
         str = validateEmail(email.value);
         if (str.length > 0){
-            alert(str);
+            showModal(str);
             return;
         }
 
         str = validatePassword(password.value)
         if (str.length >0){
-            alert(str);
+            showModal(str);
             return;
         }
 
         str = validateRepeatPassword(repeatPassword.value, password.value)
         if (str.length >0){
-            alert(str);
+            showModal(str);
             return;
         }
 
@@ -179,14 +197,14 @@ window.onload = function(){
                 localStorage.setItem('email', email.value);
                 localStorage.setItem('password', password.value);       
 
-                alert('SUCCESS: ' + data.msg);
+                showModal('SUCCESS: ' + data.msg);
             } else {
                 var errors = data.errors;
-                alert('ERROR: ' + errors[0].msg);
+                showModal('ERROR: ' + errors[0].msg);
             }
         })
         .catch(function (error){
-            alert(error);
+            showModal(error);
         })
     }
 
