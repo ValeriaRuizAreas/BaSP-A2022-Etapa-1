@@ -96,70 +96,20 @@ window.onload = function(){
     button.onclick = function(e){
         e.preventDefault();
 
-        var str;
+        var str ='';
+        str += lineBreak(validateFirstName(firstName.value));
+        str += lineBreak(validateLastName(lastName.value));
+        str += lineBreak(validateDni(dni.value));
+        str += lineBreak(validateDateOfBirth(dateOfBirth.value));
+        str += lineBreak(validatePhone(phone.value));
+        str += lineBreak(validateAddress(address.value));
+        str += lineBreak(validateCity(city.value));
+        str += lineBreak(validateZipCode(zipCode.value));
+        str += lineBreak(validateEmail(email.value));
+        str += lineBreak(validatePassword(password.value));
+        str += lineBreak(validateRepeatPassword(repeatPassword.value, password.value));
 
-        str = validateFirstName(firstName.value);
-        if (str.length > 0){
-            showModal(str);
-            return;
-        }
-
-        str = validateLastName(lastName.value);
-        if (str.length > 0){
-            showModal(str);
-            return;
-        }
-
-        str = validateDni(dni.value);
-        if (str.length > 0){
-            showModal(str);
-            return;
-        }
-
-        str = validateDateOfBirth(dateOfBirth.value);
-        if (str.length > 0){
-            showModal(str);
-            return;
-        }
-
-        str = validatePhone(phone.value);
-        if (str.length > 0){
-            showModal(str);
-            return;
-        }
-        
-        str = validateAddress(address.value);
-        if (str.length > 0){
-            showModal(str);
-            return;
-        }
-        
-        str = validateCity(city.value);
-        if (str.length > 0){
-            showModal(str);
-            return;
-        }
-
-        str = validateZipCode(zipCode.value);
-        if (str.length > 0){
-            showModal(str);
-            return;
-        }
-
-        str = validateEmail(email.value);
-        if (str.length > 0){
-            showModal(str);
-            return;
-        }
-
-        str = validatePassword(password.value)
-        if (str.length >0){
-            showModal(str);
-            return;
-        }
-
-        str = validateRepeatPassword(repeatPassword.value, password.value)
-        if (str.length >0){
+        if (str != ''){
             showModal(str);
             return;
         }
@@ -319,42 +269,42 @@ window.onload = function(){
     }
     function validateFirstName(fn){
          if (fn == ''){
-            return 'first name can not be empty';
+            return 'First name can not be empty';
         }
         if (fn.length <=3 ){
-            return 'first name must have at least 3 characters';
+            return 'First name must have at least 3 characters';
         }
 
         if (validateCharacters(fn) == false){
-            return 'use only character without numbers or spaces'; 
+            return 'Use only character without numbers or spaces'; 
         }
         return '';
     }
 
     function validateLastName(ln){
         if (ln == ''){
-            return 'last name can not be empty';
+            return 'Last name can not be empty';
         }
 
         if (ln.length <=3 ){
-            return 'last name must have at least 3 characters';
+            return 'Last name must have at least 3 characters';
         }
 
         if (validateCharacters(ln) == false){
-            return 'use only character without numbers or spaces'; 
+            return 'Use only character without numbers or spaces'; 
         }
         return '';
     }
 
     function validateDni(dni){
         if (dni == ''){
-           return 'dni can not be empty';
+           return 'DNI can not be empty';
        }
        if (dni.length <7 || dni.length >8 ){
-           return 'Dni must have between 7 and 8 numbers';
+           return 'DNI must have between 7 and 8 numbers';
        }
        if (validateNumbers(dni) == false){
-        return 'use only numbers'; 
+        return 'Use only numbers'; 
         }
        return '';
    }
@@ -368,40 +318,40 @@ window.onload = function(){
 
     function validatePhone(p){
         if (p == ''){
-            return 'phone can not be empty';
+            return 'Phone can not be empty';
         }
         if (p.length <=9 ){
-            return 'phone number must have at least 10 characters';
+            return 'Phone number must have at least 10 characters';
         }
         if (validateNumbers(p) == false){
-            return 'use only numbers'; 
+            return 'Use only numbers'; 
         }
         return '';
     }
     
     function validateAddress(ad){
         if (ad == ''){
-            return 'address can not be empty';
+            return 'Address can not be empty';
         }
 
         if (ad.length <=5 ){
-            return 'address must have at least 5 characters';
+            return 'Address must have at least 5 characters';
         }
         
         if (validateAlpha(ad) == false){
-            return 'use only character, numbers or spaces'; 
+            return 'Use only character, numbers or spaces'; 
         }
         
         if (haveCharacters(ad)== false){
-            return 'must have at least one character';
+            return 'Must have at least one character';
         }
 
         if (haveNumbers(ad)==false){
-            return 'must have at least one number';
+            return 'Must have at least one number';
         }
 
         if (haveSpaces(ad)==false){
-            return 'must have at least one space';
+            return 'Must have at least one space';
         }
         
         return '';
@@ -409,23 +359,23 @@ window.onload = function(){
     
     function validateCity(ct){
         if (ct == ''){
-            return 'city can not be empty';
+            return 'City can not be empty';
         }
         if (ct.length <=3 ){
-            return 'city must have more than 3 characters';
+            return 'City must have more than 3 characters';
         }
         if (validateAlpha(ct) == false){
-            return 'use only character, numbers or spaces'; 
+            return 'Use only character, numbers or spaces'; 
         }
         return '';
     }
     
     function validateZipCode(zc){
         if (zc == ''){
-            return 'zip code can not be empty';
+            return 'Zip code can not be empty';
         }
         if (validateNumbers(zc)==false){
-            return 'use only number';
+            return 'Use only number';
         }
         if (zc.length <4 || zc.length >5){
             return 'Must contain between 4 and 5 numbers';
@@ -435,7 +385,7 @@ window.onload = function(){
 
     function validateEmail(em){
         if (em == ''){
-            return 'email can not be emty';
+            return 'Email can not be emty';
         }
 
         var validEmail = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
@@ -447,32 +397,32 @@ window.onload = function(){
 
     function validatePassword(pas){
         if (pas == ''){
-            return 'password can not be empty';
+            return 'Password can not be empty';
         }
         if (pas.length <8 ){
-            return 'must have more than 8 characters';
+            return 'Password must have more than 8 characters';
         }
         if (validateAlpha(pas) == false){
-            return 'use only character and numbers'; 
+            return 'Use only character and numbers'; 
         }
         if (haveSpaces(pas)){
-            return 'password can not hace spaces';
+            return 'Password can not hace spaces';
         }
         if (haveNumbers(pas) == false){
-            return 'must have numbers';
+            return 'Must have numbers';
         }
         if (haveCharacters(pas) == false){
-            return 'must have at lease one character'
+            return 'Must have at lease one character'
         }
         return '';
     }
 
     function validateRepeatPassword(rpas,pas){
         if (rpas == ''){
-            return 'repeat password can not be empty';
+            return 'Repeat password can not be empty';
         }
         if (rpas != pas){
-            return 'password do not match'
+            return 'Password do not match'
         }
         return '';
     }
@@ -541,5 +491,12 @@ window.onload = function(){
     function formatDate(date) {
         var d = new Date(date);
         return (d.getMonth() + 1).toString().padStart(2, '0') + '/' + d.getDate().toString().padStart(2, '0') + '/' +   d.getFullYear();
+      }
+
+      function lineBreak(text){
+        if (text==''){
+            return '';
+        }
+        return text + "\n";
       }
 }

@@ -139,10 +139,10 @@ h4 {
 }
   
 .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; 
+    background-color: #cce9ef;
+    margin: 60% auto; 
     padding: 50px;
-    border: 1px solid #888;
+    border: 2px solid rgb(10, 1, 36);
     width: 50%; 
 }
 
